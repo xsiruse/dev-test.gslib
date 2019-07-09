@@ -1,0 +1,17 @@
+enabled: '1'
+css:
+  class: ''
+title: ''
+target: _blank
+display: both
+items:
+  -
+    icon: 'fa fa-vk'
+    text: ''
+    link: ''
+    name: VK
+  -
+    icon: 'fa fa-vimeo'
+    text: ''
+    link: 'https://vimeo.com/cinemaguru'
+    name: Vimeo

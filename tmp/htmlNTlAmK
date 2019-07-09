@@ -1,0 +1,12 @@
+<?php 
+$user =& JFactory::getUser();
+$uid = $user->get( 'id' );
+
+include_once JPATH_ROOT."/plugins/user/zygo_profile/zygo_helper.php";
+$var_1 = ZygoHelper::getField(1, $uid);
+$href = "#";
+
+echo '' . $var_1 . '
+<a class=" btn btn-danger" onClick="loadiframe('https://gslib.ru/moya-stranitsa/profile?layout=edit&avatarfunc=showform&avatar=' . $href . '')" data-toggle="modal" data-target="#myModal">Edit</a>
+';
+?>

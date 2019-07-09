@@ -1,0 +1,43 @@
+/**
+ * @package   OSDonate
+ * @contact   www.joomlashack.com, help@joomlashack.com
+ * @copyright 2010 VeroPlus.com
+ * @copyright 2011 - 2016 Open Source Training, LLC. All rights reserved
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+.osdonate-form input[type="text"],
+.osdonate-form select {
+    margin-bottom: 15px;
+}
+.osdonate-form input[type="text"]{
+	width:auto;
+	min-width:60px;
+}
+.osdonate-form select{
+	width:auto;
+	min-width:75px;
+}
+.osdonate-introtext{
+    text-align: left;
+}
+.osdonate-amount{
+    text-align:right;
+}
+.osdonate-sticky-hover{
+    text-align:center;
+    position:fixed;
+}
+#osdonatesticky {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+}
+#osdonatestatic{
+    text-align:center;
+}
+@media (max-width: 768px) {
+    .osdonate-sticky-hover{
+        position: relative;
+    }
+}

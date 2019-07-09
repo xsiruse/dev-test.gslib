@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	  type="module"
+	  version="3.0"
+	  client="site"
+	  method="upgrade">
+	<name>Hot Newsflash</name> 
+	<author>HotThemes</author> 
+	<creationDate>2009-10-06</creationDate> 
+	<copyright>All rights reserved by HotThemes</copyright> 
+	<license>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</license> 
+	<authorEmail>info@hotjoomlatemplates.com</authorEmail> 
+	<authorUrl>https://www.hotjoomlatemplates.com</authorUrl> 
+	<version>3.6.5</version> 
+	<description>&lt;h1&gt;Hot Newsflash - Free module from HotThemes&lt;/h1&gt;&lt;p&gt;Thank you for downloading the Hot Newsflash!&lt;/p&gt;&lt;p&gt;Please consider joining the &lt;a href='https://www.hotjoomlatemplates.com/joomla-template-club' target='_blank'&gt;HotThemes template club&lt;/a&gt; today! Club membership includes professional support for this module and all &lt;a href='https://www.hotjoomlatemplates.com/joomla-extensions' target='_blank'&gt;other extensions&lt;/a&gt;. You will also get access of dozens of beautiful &lt;a href='https://www.hotjoomlatemplates.com/joomla-templates' target='_blank'&gt;Joomla templates&lt;/a&gt;, each with quickstart installation.&lt;/p&gt;</description>
+
+	<files>
+		<filename module="mod_hot_newsflash">mod_hot_newsflash.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_hot_newsflash.xml</filename>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_hot_newsflash.ini</language>
+		<language tag="fr-FR">fr-FR.mod_hot_newsflash.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="module" label="LABEL MODULE PROPERTIES">
+				<field name="spacer" type="spacer" label="MODULE_DESC" />
+				<field name="moduleclass_sfx" type="text" default="" label="LABEL MODULE CLASS SUFFIX" description="" />
+				<field name="moduleWidth" type="text" default="600" label="LABEL MODULE WIDTH" description="DESC MODULE WIDTH" />
+				<field name="moduleBackground" type="color" default="#ffffff" label="LABEL BACKGROUND" description="DESC BACKGROUND" />
+				<field name="borderWidth" type="text" default="0" label="LABEL BORDER WIDTH" description="DESC BORDER WIDTH" />
+				<field name="borderColor" type="color" default="#000000" label="LABEL BORDER COLOR" description="DESC BORDER COLOR" />
+				<field name="tabNumber" type="list" default="4" label="LABEL TAB NUMBER" description="DESC TAB NUMBER">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</field>
+				<field name="readMore" type="list" default="1" label="LABEL READ MORE" description="DESC READ MORE">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="readMoreText" type="text" default="Full story" label="LABEL READ MORE TEXT" description="DESC READ MORE TEXT" />
+				<field name="speed" type="text" default="5000" label="LABEL SPEED" description="DESC SPEED" />
+				<field name="headingTextColor" type="color" default="#000000" label="LABEL HEADING TEXT COLOR" description="DESC HEADING TEXT COLOR" />
+				<field name="mainTextColor" type="color" default="#000000" label="LABEL TEXT COLOR" description="DESC TEXT COLOR" />
+			</fieldset>
+			<fieldset name="tabs" label="LABEL TABS PROPERTIES">
+				<field name="spacer" type="spacer" label="MODULE_DESC" />
+				<field name="tabWidth" type="text" default="150" label="LABEL TAB WIDTH" description="DESC TAB WIDTH" />
+				<field name="tabBgColor" type="color" default="#ffffff" label="LABEL TAB BG COLOR" description="DESC TAB BG COLOR" />
+				<field name="tabBgColorHover" type="color" default="#f2f2f2" label="LABEL TAB BG COLOR HOVER" description="DESC TAB BG COLOR HOVER" />
+				<field name="tabBgColorActive" type="color" default="#000000" label="LABEL TAB BG COLOR ACTIVE" description="DESC TAB BG COLOR ACTIVE" />
+				<field name="tabFontColor" type="color" default="#000000" label="LABEL TAB FONT COLOR" description="DESC TAB FONT COLOR" />
+				<field name="tabFontColorHover" type="color" default="#000000" label="LABEL TAB FONT COLOR HOVER" description="DESC TAB FONT COLOR HOVER" />
+				<field name="tabFontColorActive" type="color" default="#ffffff" label="LABEL TAB FONT COLOR ACTIVE" description="DESC TAB FONT COLOR ACTIVE" />
+				<field name="tabDelimiterColor" type="color" default="#cccccc" label="LABEL TAB DELIMITER COLOR" description="DESC TAB DELIMITER COLOR" />
+				<field name="tabMultiline" type="list" default="1" label="LABEL TAB MULTILINE" description="DESC TAB MULTILINE">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+			<fieldset name="images" label="LABEL IMAGE PROPERTIES">
+				<field name="spacer" type="spacer" label="MODULE_DESC" />
+				<field name="imageWidth" type="text" default="254" label="LABEL IMAGE WIDTH" description="DESC IMAGE WIDTH" />
+				<field name="imageHeight" type="text" default="169" label="LABEL IMAGE HEIGHT" description="DESC IMAGE HEIGHT" />
+				<field name="imageLink" type="list" default="1" label="LABEL IMAGE LINK" description="DESC IMAGE LINK">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+			<fieldset name="article1" label="LABEL ARTICLE1">
+				<field name="spacer" type="spacer" label="MODULE_DESC" />
+				<field name="heading1" type="text" default="" label="LABEL HEADING" description="DESC HEADING" />
+				<field name="link1" type="text" default="" label="LABEL LINK" description="DESC LINK" />
+				<field name="info1" type="textarea" cols="50" rows="4" filter="raw" default="" label="LABEL INFO" description="DESC INFO" />
+				<field name="image1" type="media" default="" label="LABEL IMAGE" description="DESC IMAGE" />
+			</fieldset>
+			<fieldset name="article2" label="LABEL ARTICLE2">
+				<field name="spacer" type="spacer" label="MODULE_DESC" />
+				<field name="heading2" type="text" default="" label="LABEL HEADING" description="DESC HEADING" />
+				<field name="link2" type="text" default="" label="LABEL LINK" description="DESC LINK" />
+				<field name="info2" type="textarea" cols="50" rows="4" filter="raw" default="" label="LABEL INFO" description="DESC INFO" />
+				<field name="image2" type="media" default="" label="LABEL IMAGE" description="DESC IMAGE" />
+			</fieldset>
+			<fieldset name="article3" label="LABEL ARTICLE3">
+				<field name="spacer" type="spacer" label="MODULE_DESC" />
+				<field name="heading3" type="text" default="" label="LABEL HEADING" description="DESC HEADING" />
+				<field name="link3" type="text" default="" label="LABEL LINK" description="DESC LINK" />
+				<field name="info3" type="textarea" cols="50" rows="4" filter="raw" default="" label="LABEL INFO" description="DESC INFO" />
+				<field name="image3" type="media" default="" label="LABEL IMAGE" description="DESC IMAGE" />
+			</fieldset>
+			<fieldset name="article4" label="LABEL ARTICLE4">
+				<field name="spacer" type="spacer" label="MODULE_DESC" />
+				<field name="heading4" type="text" default="" label="LABEL HEADING" description="DESC HEADING" />
+				<field name="link4" type="text" default="" label="LABEL LINK" description="DESC LINK" />
+				<field name="info4" type="textarea" cols="50" rows="4" filter="raw" default="" label="LABEL INFO" description="DESC INFO" />
+				<field name="image4" type="media" default="" label="LABEL IMAGE" description="DESC IMAGE" />
+			</fieldset>
+			<fieldset name="article5" label="LABEL ARTICLE5">
+				<field name="spacer" type="spacer" label="MODULE_DESC" />
+				<field name="heading5" type="text" default="" label="LABEL HEADING" description="DESC HEADING" />
+				<field name="link5" type="text" default="" label="LABEL LINK" description="DESC LINK" />
+				<field name="info5" type="textarea" cols="50" rows="4" filter="raw" default="" label="LABEL INFO" description="DESC INFO" />
+				<field name="image5" type="media" default="" label="LABEL IMAGE" description="DESC IMAGE" />
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+        <server type="extension" priority="1" name="Hot Newsflash">https://www.hotjoomlatemplates.com/download/update/mod_hot_newsflash.xml</server>
+    </updateservers>
+</extension>

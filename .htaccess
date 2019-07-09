@@ -1,0 +1,95 @@
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(php|html|htm)\ HTTP/ 
+RewriteRule ^(.*)index\.(php|html|htm)$ $1 [R=301,L]
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+#
+# If the requested path and file is not /index.php and the request
+# has not already been internally rewritten to the index.php script
+RewriteCond %{REQUEST_URI} !^/index\.php
+# and the requested path and file doesn't directly match a physical file
+RewriteCond %{REQUEST_FILENAME} !-f
+# and the requested path and file doesn't directly match a physical folder
+RewriteCond %{REQUEST_FILENAME} !-d
+# internally rewrite the request to the index.php script
+RewriteRule .* index.php [L]
+#
+## End - Joomla! core SEF Section.
+
+
+
+# 
+ErrorDocument 401 "Unauthorized"
+ErrorDocument 403 "Forbidden"
+RewriteEngine On
+RewriteBase /
+
+#### PERSISTENT CONTENT ####
+
+#### PERSISTENT CONTENT END ####
+
+DirectoryIndex index.php index.cgi index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ sitepro/$1 [L,QSA]
+
+#### PERSISTENT CONTENT ####
+
+
+
+
+
+
+# Включение mod_rewrite
+RewriteEngine On
+ 
+# Редирект с www
+RewriteCond %{HTTP_HOST} ^www.gslib.ru
+RewriteRule (.*) http://gslib.ru/$1 [R=301,L]
+ 
+# Вывод sitemap по кратким урл
+RewriteCond %{REQUEST_URI} ^(/sitemap.xml)$
+RewriteRule (.*) index.php?option=com_xmap&view=xml&tmpl=component&id=1 [L]
+RewriteCond %{REQUEST_URI} ^(/sitemap.html)$
+RewriteRule (.*) index.php?option=com_xmap&sitemap=1 [L]
+ 
+ 
+## Код запрета доступа к xml-файлам расширений 
+#<Files ~ "\.xml$">
+#Order allow,deny
+#Deny from all
+#Satisfy all
+#</Files>
+## Конец кода запрета доступа к xml-файлам
+
+
+
+# Блокировать любой запрос, пытающийся установить значение mosConfig через URL
+RewriteCond %{QUERY_STRING} mosConfig_[a-zA-Z_]{1,21}(=|\%3D) [OR]
+# Блокировать любой запрос, пытающийся испортить base64_encode через URL
+RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [OR]
+# Блокировать любой запрос, содержащий тег <script> в URL
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+# Блокировать любой запрос, пытающийся установить значение глобальных переменных PHP через URL
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+# Блокировать любой запрос, пытающийся изменить _REQUEST переменную через URL
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+# Перенаправлять заблокированные запросы на страницу 403 с запрещенными ошибками!
+RewriteRule ^(.*)$ index.php [F,L]
+#
+########## Конец правил обработки для блокировки распространенных эксплоитов 
+
+php_value upload_max_filesize 50M
+php_value post_max_size 50M 
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 91.77.64.133
+deny from 220.248.36.56
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the вЂњea-php72вЂќ package as the default вЂњPHPвЂќ programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php72___lsphp .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

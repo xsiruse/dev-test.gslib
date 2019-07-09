@@ -1,0 +1,13 @@
+<?php
+
+$item = $model->getTable();
+$app = JFactory::getApplication();
+
+// getting array of current Fabrik list's main table pk values and imploding them to comma separated list:
+
+$ids = $app->input->get('ids', array(), 'array');
+$id = implode(',', $ids);
+
+
+echo "<pre>";print_r($item);exit;
+?>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content" method="upgrade">
+    <name>Mp3browser</name>
+    <version>1.6.1</version>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <author>Ecolora</author>
+    <authoremail>ecolora@gmail.com</authoremail>
+    <authorurl>http://www.ecolora.com</authorurl>
+    <copyright>Copyright (C) 2012 ecolora. All rights reserved.</copyright>
+    <creationDate>2013-04-09</creationDate>
+    <description><![CDATA[MP3_BROWSER_NEW_DESCRIPTION]]></description>
+<files>
+<filename plugin="mp3browser">mp3browser.php</filename>
+<filename>index.html</filename>
+<folder>mp3browser/</folder>
+</files>
+     <languages folder="languages">
+  		<language tag="en-GB">en-GB.plg_content_mp3browser.sys.ini</language>
+		<language tag="ru-RU">ru-RU.plg_content_mp3browser.sys.ini</language>
+	</languages>
+
+<config>
+<fields name="params">
+ <fieldset name="basic">
+  <field name="maxRows" type="text" size="12"
+                default="20" label="MP3_BROWSER_NEW_MAX_ROWS"
+                description="MP3_BROWSER_NEW_MAX_ROWS_DESC" />
+ <field name="spacer1" type="spacer" hr="true" />
+ <field name="subd" type="radio" default="1" label="MP3_BROWSER_NEW_INCLUDE_SUBDIRECTORIES" description="MP3_BROWSER_NEW_INCLUDE_SUBDIRECTORIES_DESC">
+ 			<option value="1">Yes</option>
+ 			<option value="0">No</option>
+ 		</field>
+ <field name="sortBy" type="radio" default="1" label="MP3_BROWSER_NEW_SORT_ORDER" description="MP3_BROWSER_NEW_SORT_ORDER_DESC">
+ 			<option value="1">MP3_BROWSER_NEW_ASCENDING</option>
+ 			<option value="0">Descending</option>
+ 		</field>
+ <field name="spacer2" type="spacer" hr="true" />
+   <field name="tableWidth" type="text" size="5"
+                default="" label="MP3_BROWSER_NEW_TABLE_WIDTH"
+                description="MP3_BROWSER_NEW_TABLE_WIDTH_DESC" />
+                 <field name="headerHeight" type="text" size="5"
+                default="" label="MP3_BROWSER_NEW_HEADER_HEIGHT"
+                description="MP3_BROWSER_NEW_HEADER_HEIGHT_DESC" />
+                 <field name="rowHeight" type="text" size="5"
+                default="" label="MP3_BROWSER_NEW_ROW_HEIGHT"
+                description="MP3_BROWSER_NEW_ROW_HEIGHT_DESC" />
+ <field name="spacer3" type="spacer" hr="true" />
+                    <field name="headerColor" type="text" size="12"
+                default="#CCCCCC" label="MP3_BROWSER_NEW_TABLE_HEADER_COLOR"
+                description="MP3_BROWSER_NEW_TABLE_HEADER_COLOR_DESC" />
+                 <field name="primaryRowColor" type="text" size="12"
+                default="#FFFFFF" label="MP3_BROWSER_NEW_PRIMARY_ROW_COLOR"
+                description="MP3_BROWSER_NEW_PRIMARY_ROW_COLOR_DESC" />
+                     <field name="altRowColor" type="text" size="12"
+                default="#D6E3EB" label="MP3_BROWSER_NEW_ALT_ROW_COLOR"
+                description="MP3_BROWSER_NEW_ALT_ROW_COLOR_DESC" />
+ <field name="spacer4" type="spacer" hr="true" />
+	<field name="showDownload" type="radio" default="1" label="MP3_BROWSER_NEW_SHOW_DOWNLOAD_COLUMN" description="MP3_BROWSER_NEW_SHOW_DOWNLOAD_COLUMN_DESC">
+ 			<option value="1">On</option>
+ 			<option value="0">Off</option>
+ 		</field>
+  <field name="downloadText" type="text" size="12"
+                default="Download" label="MP3_BROWSER_NEW_DOWNLOAD_HEADER"
+                description="MP3_BROWSER_NEW_DOWNLOAD_HEADER_DESC" />
+ <field name="downloadColWidth" type="text" size="5"
+                default="" label="MP3_BROWSER_NEW_DOWNLOAD_COLUMN_WIDTH"
+                description="MP3_BROWSER_NEW_DOWNLOAD_COLUMN_WIDTH_DESC" />
+
+ <field name="downloadImage" type="text" size="40"
+                default="" label="MP3_BROWSER_NEW_DOWNLOAD_IMAGE"
+                description="MP3_BROWSER_NEW_DOWNLOAD_IMAGE_DESC" />
+<field name="downloadImageAlt" type="text" size="40"
+                default="" label="MP3_BROWSER_NEW_ALTERNATIVE_DOWNLOAD_IMAGE"
+                description="MP3_BROWSER_NEW_ALTERNATIVE_DOWNLOAD_IMAGE_DESC" />
+ <field name="spacer5" type="spacer" hr="true" />
+
+  <field name="nameText" type="text" size="12"
+                default="Name" label="MP3_BROWSER_NEW_NAME_HEADER"
+                description="MP3_BROWSER_NEW_NAME_HEADER_DESC" />
+ <field name="spacer6" type="spacer" hr="true" />
+     <field name="playText" type="text" size="12"
+                default="Play" label="MP3_BROWSER_NEW_PLAY_HEADER"
+                description="MP3_BROWSER_NEW_PLAY_HEADER_DESC" />
+ <field name="spacer7" type="spacer" hr="true" />
+          <field name="showSize" type="radio" default="1" label="MP3_BROWSER_NEW_SHOW_SIZE_COLUMN" description="Show Size Column">
+ 			<option value="1">On</option>
+ 			<option value="0">Off</option>
+ 		</field>
+  <field name="sizeText" type="text" size="12"
+                default="Size" label="MP3_BROWSER_NEW_SIZE_HEADER"
+                description="MP3_BROWSER_NEW_SIZE_HEADER_DESC" />
+
+ <field name="spacer8" type="spacer" hr="true" />
+ <field name="showLength" type="radio" default="1" label="MP3_BROWSER_NEW_SHOW_LENGTH_COLUMN" description="Show Length Column">
+ 			<option value="1">On</option>
+ 			<option value="0">Off</option>
+ 		</field>
+  <field name="lengthText" type="text" size="12"
+                default="Length" label="MP3_BROWSER_NEW_LENGTH_HEADER"
+                description="MP3_BROWSER_NEW_LENGTH_HEADER_DESC" />
+ <field name="spacer9" type="spacer" hr="true" />
+ </fieldset>
+ </fields>
+ </config>
+	<updateservers>
+		<server
+			type="extension"
+			priority="1"
+			name="Extensions from EcoloRa">http://ecolora.com/test.xml
+		</server>
+	</updateservers>
+</extension>

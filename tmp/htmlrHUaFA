@@ -1,0 +1,52 @@
+<?php
+$db = JFactory::getDBO();
+
+// To get the content of a simple field element
+$foo = $formModel->getElementData('mytable___foo');
+// To get the content of the second occurence of an element in a repeat group (group repeats are numbered from 0)
+$foo = $formModel->getElementData('my_repeat_table___foo', false, '', 1);
+
+/*
+*To get the raw value for a database join element, which is set to display as a dropdown.
+* Note that the data in a join element, or any element which has multiple value (checkbox, radiom etc)
+* will (almost always) be an array, as it can contain multiple values.  For a single value dropdown, we
+* will typically just want the first (and only) value in that array, so the second line here simply extracts
+* the single result from the array.
+* Also note the use of the second argument, $raw, which fetches the 'value' rather than the 'label'
+*/
+$foo = $formModel->getElementData('gsl_product', true);
+$foo = is_array($foo) ? $foo[0] : $foo;
+
+/*
+* During a submission hook (like onBeforeProcess, onAfterProcess, etc), get the number of times a
+* group has been repeated, and fetch each value of foo.  You'll need to know the group ID of your group
+* which is in the rightmost column of the main list of groups on the backend.  Here we'll use 123.  On
+* submit, the totals for each group's repeats are in a hidden form variable called fabrik_repeat_group,
+* which we can fetch with the J! request API ($input->get()):
+$app = JFactory::getApplication();
+$input = $app->input; $group_id = 123;
+$repeatTotals = $input->get('fabrik_repeat_group', array(0), 'array');
+for ($repeats = 0; $repeats < $repeatTotals[$group_id]; $repeats++)
+{
+  $foo = $formModel->getElementData('my_repeat_table___foo', false, $repeat);
+  // some code to do something with $foo goes here
+}
+
+/*
+* An alternative approach to fetching all the repeated value for an element in a repeat group.
+* This time, we'll just get the element's value, without specifying a repeatCount, in which case
+* getElementData() will just hand us back an array which has all the repeated values.
+* Typically when doing something like this, you will be wanting to fetch the coresponding value
+* for another element in the same repeated instance of the group.  So in this example, we'll use the key
+* from a foreach() to grab another element's value.  This example assumes we're going to do math on
+* a 'cost' and 'qty', so specify $raw to make sure we get unformatted values.
+*/
+$costs = $formModel->getElementData('my_repeat_table___cost', true);
+foreach ($costs as $key => $cost)
+{
+  $qty = $formModel->getElementData('my_repeat_table___qty', true, 0, $key);
+  // do something with $cost and $qty
+}
+
+echo ' . $foo . '
+?>

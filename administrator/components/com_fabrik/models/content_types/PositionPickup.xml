@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<contenttype>
+  <name>PositionPickup</name>
+  <fabrikversion>3.7</fabrikversion>
+  <group join_id="" is_join="0" id="6" name="PositionPickup" label="PositionPickup" css="" published="1" created="2017-10-01 17:09:10" private="0">
+    <params split_page="0" list_view_and_query="1" access="1" intro="" outro="" repeat_group_button="0" repeat_template="repeatgroup" repeat_max="" repeat_min="" repeat_num_element="" repeat_error_message="" repeat_intro="" repeat_add_access="1" repeat_delete_access="1" repeat_delete_access_user="" repeat_copy_element_values="0" group_columns="1" group_column_widths="" repeat_group_show_first="1" random="0" labels_above="-1" labels_above_details="-1"/>
+    <element label="id" published="1" name="id" id="32" plugin="dropdown" created="2017-10-01 17:09:10" width="0" height="0" default="" hidden="0" eval="0" ordering="0" show_in_list_summary="1" filter_type="" filter_exact_match="" link_to_detail="1" primary_key="0" auto_increment="0" access="1" use_in_page_title="0" parent_id="0">
+      <params edit_access="1" view_access="1" list_view_access="1" filter_access="1" sum_access="1" avg_access="1" median_access="1" count_access="1" custom_calc_access="1"/>
+    </element>
+    <element label="name" published="1" name="name" id="33" plugin="dropdown" created="2017-10-01 17:09:10" width="0" height="0" default="" hidden="0" eval="0" ordering="0" show_in_list_summary="1" filter_type="" filter_exact_match="" link_to_detail="1" primary_key="0" auto_increment="0" access="1" use_in_page_title="0" parent_id="0">
+      <params edit_access="1" view_access="1" list_view_access="1" filter_access="1" sum_access="1" avg_access="1" median_access="1" count_access="1" custom_calc_access="1"/>
+    </element>
+  </group>
+  <database>
+    <source>sp_positionpickup</source>
+  </database>
+  <viewlevels>
+    <viewlevel id="1" title="Public" ordering="0" rules="[1]"/>
+    <viewlevel id="2" title="Registered" ordering="2" rules="[6,2,8]"/>
+    <viewlevel id="3" title="Special" ordering="3" rules="[6,3,8]"/>
+    <viewlevel id="5" title="Guest" ordering="1" rules="[9]"/>
+    <viewlevel id="6" title="Super Users" ordering="4" rules="[8]"/>
+  </viewlevels>
+  <groups>
+    <group id="1" parent_id="0" lft="1" rgt="18" title="Public"/>
+    <group id="2" parent_id="1" lft="8" rgt="15" title="Registered"/>
+    <group id="3" parent_id="2" lft="9" rgt="14" title="Author"/>
+    <group id="4" parent_id="3" lft="10" rgt="13" title="Editor"/>
+    <group id="5" parent_id="4" lft="11" rgt="12" title="Publisher"/>
+    <group id="6" parent_id="1" lft="4" rgt="7" title="Manager"/>
+    <group id="7" parent_id="6" lft="5" rgt="6" title="Administrator"/>
+    <group id="8" parent_id="1" lft="16" rgt="17" title="Super Users"/>
+    <group id="9" parent_id="1" lft="2" rgt="3" title="Guest"/>
+  </groups>
+</contenttype>

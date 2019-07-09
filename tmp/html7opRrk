@@ -1,0 +1,9 @@
+<?php 
+$user =& JFactory::getUser();
+$uid = $user->get( 'id' );
+
+include_once JPATH_ROOT."/plugins/user/zygo_profile/zygo_helper.php";
+$avatar_1 = ZygoHelper::getAvatar($uid);
+
+echo '<h2>' . $avatar_1 . '</h2>';
+?>

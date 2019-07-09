@@ -1,0 +1,163 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1481092873
+layout:
+  /navigation/:
+    -
+      - 'spacer-2975 50'
+      - 'position-module-6976 50'
+    -
+      - 'spacer-8255 75'
+      - 'position-module-4966 15'
+      - 'spacer-6813 10'
+  /header/: {  }
+  /intro/:
+    -
+      - 'spacer-5480 5'
+      - 'logo-3321 20'
+      - 'spacer-8967 5'
+      - 'menu-1386 65'
+      - 'spacer-4109 5'
+  /features/: {  }
+  /utility/: {  }
+  /above/: {  }
+  /testimonials/: {  }
+  /expanded/: {  }
+  /container-main/:
+    -
+      -
+        'aside 20':
+          -
+            - position-position-4734
+      -
+        'mainbar 60':
+          -
+            - system-content-1587
+      -
+        'sidebar 20':
+          -
+            - position-position-3949
+  /footer/:
+    -
+      - 'logo-9571 20'
+      - 'paypaldonate-7867 20'
+      - 'spacer-4934 35'
+      - 'social-6571 25'
+  /offcanvas/:
+    -
+      - 'position-module-2100 50'
+      - 'mobile-menu-5697 50'
+structure:
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+      class: nopaddingall
+  features:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+      class: nopaddingall
+  offcanvas:
+    attributes:
+      boxed: ''
+content:
+  position-module-6976:
+    title: 'Login-top Module'
+    attributes:
+      module_id: '161'
+      key: login-top-module
+    block:
+      id: login-top
+      extra:
+        -
+          style: 'display:none'
+  position-module-4966:
+    title: 'Module Instance'
+    attributes:
+      module_id: '183'
+      key: module-instance
+    block:
+      id: login-gold
+      variations: 'nomarginall nopaddingall align-right'
+  logo-3321:
+    title: 'Logo / Image'
+  menu-1386:
+    block:
+      id: main-menu
+      extra:
+        -
+          style: 'position:relative'
+  position-position-4734:
+    title: Aside
+    attributes:
+      key: aside
+  position-position-3949:
+    title: Sidebar
+    attributes:
+      key: sidebar
+  logo-9571:
+    title: 'Logo / Image'
+    block:
+      extra:
+        -
+          styles: 'max-height:50px'
+  paypaldonate-7867:
+    title: 'Paypal Donate'
+  social-6571:
+    block:
+      variations: center
+  position-module-2100:
+    title: 'Module Instance'
+    attributes:
+      module_id: '183'
+      key: module-instance

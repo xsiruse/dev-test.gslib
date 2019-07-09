@@ -1,0 +1,86 @@
+name: 42
+timestamp: 1555874087
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1481092873
+positions:
+  aside: Aside
+  sidebar: Sidebar
+sections:
+  navigation: Navigation
+  intro: Intro
+  features: Features
+  utility: Utility
+  above: Above
+  testimonials: Testimonials
+  expanded: Expanded
+  header: Header
+  aside: Aside
+  sidebar: Sidebar
+  mainbar: Mainbar
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  custom:
+    custom-2969: loader
+  content:
+    system-content-1587: 'Page Content'
+  spacer:
+    spacer-7876: Spacer
+    spacer-9439: Spacer
+    spacer-4261: Spacer
+    spacer-6826: Spacer
+    spacer-9952: Spacer
+    spacer-3717: Spacer
+    spacer-9110: Spacer
+  module:
+    position-module-5587: 'Login-top Module'
+    position-module-4382: 'Module Instance'
+    position-module-9837: 'Module Instance'
+  logo:
+    logo-3939: 'Logo / Image'
+    logo-2062: 'Logo / Image'
+  menu:
+    menu-9619: Menu
+  position:
+    position-position-8639: Aside
+    position-position-9484: Sidebar
+  paypaldonate:
+    paypaldonate-5051: 'Paypal Donate'
+  social:
+    social-2391: Social
+  mobile-menu:
+    mobile-menu-1004: Mobile-menu
+inherit:
+  default:
+    navigation: navigation
+    header: header
+    intro: intro
+    features: features
+    utility: utility
+    above: above
+    testimonials: testimonials
+    aside: aside
+    sidebar: sidebar
+    footer: footer
+    offcanvas: offcanvas
+    spacer-7876: spacer-2975
+    position-module-5587: position-module-6976
+    spacer-9439: spacer-8255
+    position-module-4382: position-module-4966
+    spacer-4261: spacer-6813
+    spacer-6826: spacer-5480
+    logo-3939: logo-3321
+    spacer-9952: spacer-8967
+    menu-9619: menu-1386
+    spacer-3717: spacer-4109
+    position-position-8639: position-position-4734
+    position-position-9484: position-position-3949
+    logo-2062: logo-9571
+    paypaldonate-5051: paypaldonate-7867
+    spacer-9110: spacer-4934
+    social-2391: social-6571
+    position-module-9837: position-module-2100
+    mobile-menu-1004: mobile-menu-5697

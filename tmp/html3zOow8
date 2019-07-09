@@ -1,0 +1,25 @@
+<?php
+// Get a db connection.
+$myDb = JFactory::getDbo();
+
+// Create a new query object.
+$myQuery = $myDb->getQuery(true);
+
+$myQuery
+    ->select(array('Look', 'Model'))
+    ->from('gsl_product')
+    ->where('ID = ' . $myDb->quote('value'));
+
+// Assign the query to the db
+$myDb->setQuery($myQuery);
+
+// Load the results as an array of objects.
+$rows = $myDb->loadObjectList();
+
+$list = array();
+foreach ($rows as $row)
+{
+    $list[] = "<li>" . $row->Look. " " . $row->Model. "</li>";
+}
+return "<ol>" . implode($list) . "</ol>";
+?>

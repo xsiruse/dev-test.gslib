@@ -1,0 +1,13 @@
+<?php
+$db = JFactory::getDBO();
+
+
+$foo = $formModel->getElementData('gsl_product', true);
+$foo = is_array($foo) ? $foo[0] : $foo;
+
+$gslprodid = $formModel->data('gsl_product___id');
+
+$gslprodimg = $formModel->data('gsl_product___Look');
+
+echo '<div>' . $gslprodimg . '</div>';
+?>

@@ -1,0 +1,11 @@
+<?php
+echo 'Hello World';
+$myDb = JFactory::getDbo();
+$myQuery = $myDb->getQuery(true);
+
+$myDb->setQuery($myQuery);
+    
+$rows = $myDb->loadObjectList();
+print_r($rows);
+echo 1;
+?>

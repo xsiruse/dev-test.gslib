@@ -1,0 +1,14 @@
+<?php 
+$user =& JFactory::getUser();
+$userId= $user->get( 'id' );
+
+require_once JPATH_PLUGINS . '/user/cmavatar/helper.php';
+
+$avatar = PlgUserCMAvatarHelper::getAvatar($userId);
+
+echo '<img src="/' . $avatar . '">
+<input type="file" name="jform[cmavatar][cmavatar]" id="jform_cmavatar_cmavatar" aria-invalid="false">'
+?>
+
+<?php elseif ($field->type == 'CMAvatar') : ?>
+        <?php echo $field->value; ?>

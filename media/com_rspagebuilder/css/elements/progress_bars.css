@@ -1,0 +1,51 @@
+
+/* Progress Bars */
+
+/* General styling */
+.rspbld-progress-bars .progress {
+	height: 25px;
+}
+.rspbld-progress-bars .progress:last-of-type {
+	margin-bottom: 0;
+}
+/* End general styling */
+
+/* Bootstrap v2 styling */
+.rspbld-progress-bars .progress .bar {
+	background-image: none !important;
+	background-repeat: none !important;
+	color: #ffffff;
+	height: 100%;
+	overflow: hidden;
+	text-shadow: none !important;
+}
+.rspbld-progress-bars.animate .progress .bar {
+	opacity: 0;
+}
+.rspbld-progress-bars .bar .rspbld-item-title {
+	font-size: 14px;
+	height: 100%;
+	line-height: 25px;
+	text-align: center;
+}
+/* End Bootstrap v2 styling */
+
+/* Bootstrap v3 styling */
+.rspbld-progress-bars .progress .progress-bar {
+	background-image: none !important;
+	background-repeat: none !important;
+	color: #ffffff;
+	height: 100%;
+	overflow: hidden;
+	text-shadow: none !important;
+}
+.rspbld-progress-bars.animate .progress .progress-bar {
+	opacity: 0;
+}
+.rspbld-progress-bars .progress-bar .rspbld-item-title {
+	font-size: 14px;
+	height: 100%;
+	line-height: 25px;
+	text-align: center;
+}
+/* End Bootstrap v3 styling */

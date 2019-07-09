@@ -1,0 +1,16 @@
+enabled: '1'
+class: ''
+target: _blank
+items:
+  -
+    text: 'Тема 1'
+    link: ''
+    name: хуйня
+  -
+    name: пизда
+  -
+    name: ебня
+  -
+    name: дрочь
+  -
+    name: 'New item'

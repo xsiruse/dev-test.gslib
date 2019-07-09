@@ -1,0 +1,10 @@
+[20-May-2018 15:42:24 Europe/Moscow] PHP Notice:  Undefined index: buttoncount in /home/guitars1/public_html/components/com_fabrik/views/list/tmpl/div/template_css.php on line 13
+[20-May-2018 15:42:24 Europe/Moscow] PHP Stack trace:
+[20-May-2018 15:42:24 Europe/Moscow] PHP   1. {main}() /home/guitars1/public_html/components/com_fabrik/views/list/tmpl/div/template_css.php:0
+[20-May-2018 15:45:47 Europe/Moscow] PHP Notice:  Undefined index: buttoncount in /home/guitars1/public_html/components/com_fabrik/views/list/tmpl/div/template_css.php on line 13
+[20-May-2018 15:45:47 Europe/Moscow] PHP Stack trace:
+[20-May-2018 15:45:47 Europe/Moscow] PHP   1. {main}() /home/guitars1/public_html/components/com_fabrik/views/list/tmpl/div/template_css.php:0
+[20-May-2018 15:45:58 Europe/Moscow] PHP Notice:  Undefined index: buttoncount in /home/guitars1/public_html/components/com_fabrik/views/list/tmpl/div/template_css.php on line 13
+[20-May-2018 15:45:58 Europe/Moscow] PHP Stack trace:
+[20-May-2018 15:45:58 Europe/Moscow] PHP   1. {main}() /home/guitars1/public_html/components/com_fabrik/views/list/tmpl/div/template_css.php:0
+[30-Sep-2018 18:01:05 Europe/Moscow] PHP Notice:  Undefined index: buttoncount in /home/guitars1/public_html/components/com_fabrik/views/list/tmpl/div2/template_css.php on line 13

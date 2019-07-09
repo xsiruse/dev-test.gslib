@@ -1,0 +1,12 @@
+
+/* Animated Number */
+
+/* General styling */
+.rspbld-animated-number .rspbld-number {
+	background-color: #a12222;
+	color: #fff;
+	font-size: 24px;
+	display: inline-block;
+	padding: 15px;
+}
+/* End general styling */

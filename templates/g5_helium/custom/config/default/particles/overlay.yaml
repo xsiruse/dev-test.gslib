@@ -1,0 +1,15 @@
+enabled: '1'
+style: '1'
+image: ''
+altimg: ''
+background: uk-overlay-default
+overlayposition: uk-position-bottom
+overlaytransition: none
+textposition: uk-position-center
+text: ''
+image1: ''
+altimg1: ''
+image2: ''
+altimg2: ''
+overlaytransition1: uk-transition-fade
+class: ''

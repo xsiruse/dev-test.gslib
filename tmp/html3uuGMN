@@ -1,0 +1,7 @@
+<?php 
+require_once JPATH_PLUGINS . '/user/cmavatar/helper.php';
+$avatar = PlgUserCMAvatarHelper::getAvatar($userId); 
+
+
+echo  "<img src="$avatar"}>";
+?>

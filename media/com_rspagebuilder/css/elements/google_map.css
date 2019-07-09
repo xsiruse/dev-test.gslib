@@ -1,0 +1,12 @@
+
+/* Google Map */
+
+/* General styling */
+.rspbld-google-map .map {
+	height: 250px;
+	width: 100%;
+}
+.rspbld-google-map .rspbld-infowindow .rspbld-title {
+	margin-top: 0;
+}
+/* End general styling */

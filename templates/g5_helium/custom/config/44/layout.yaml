@@ -1,0 +1,146 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1481092873
+layout:
+  navigation: {  }
+  header: {  }
+  intro: {  }
+  features: {  }
+  utility: {  }
+  /above/:
+    -
+      - custom-9752
+  /testimonials/: {  }
+  /expanded/:
+    -
+      - system-content-1587
+  /container-main/:
+    -
+      -
+        'aside 20': {  }
+      -
+        'mainbar 60': {  }
+      -
+        'sidebar 20': {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  intro:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  features:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  utility:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  above:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'nomarginall nopaddingall'
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: '1'
+      class: ''
+      variations: ''
+  aside:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+    attributes:
+      class: ''
+      variations: ''
+  sidebar:
+    type: section
+    subtype: aside
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  custom-9752:
+    title: 'Custom HTML'
+    attributes:
+      html: '<div id="identify"></div>'
+    block:
+      extra:
+        -
+          style: 'background:radial-gradient(#818190ff, #504f63ff); height:320px'
+  system-content-1587:
+    block:
+      id: news
+      class: article
+      variations: spaced
+      extra:
+        -
+          style: 'background: white;     border: 1px solid;     padding: 5%;     margin: -18% 0 0;position: relative;'

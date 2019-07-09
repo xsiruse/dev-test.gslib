@@ -1,0 +1,30 @@
+--------------------------
+#----- Version 1.4 ------#
+--------------------------
+1. Upgraded version to FREE & PRO
+
+
+--------------------------
+#----- Version 1.3 ------#
+--------------------------
+1. Upgraded version to work with Joomla 3.x
+
+
+--------------------------
+#----- Version 1.2 ------#
+--------------------------
+1. Upgraded version to work with Joomla 1.6, Joomla 1.7 and Joomla 2.5
+
+
+--------------------------
+#----- Version 1.1 ------#
+--------------------------
+1. Fixed some minor bugs.
+2. Fixed the functions that are deprecated from php version 5.3.0
+3. Upgraded the swfobject version from 2.1 to 2.2
+
+
+--------------------------
+#----- Version 1.0 ------#
+--------------------------
+This is the first release.

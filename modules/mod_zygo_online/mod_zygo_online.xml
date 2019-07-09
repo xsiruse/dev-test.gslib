@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" client="site" method="upgrade">
+	<name>mod_zygo_online</name>
+	<author>SherZa</author>
+	<creationDate>October 2015</creationDate>
+	<copyright>(C) Psytronica.ru. http://psytronica.ru  All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>zygopterix@gmail.com</authorEmail>
+	<authorUrl>http://psytronica.ru</authorUrl>
+	<version>3.5.0</version>
+	<description>MOD_ZYGO_ONLINE_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_zygo_online">mod_zygo_online.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>	
+	</files>
+	<languages>
+		<language tag="ru-RU">languages/ru-RU/ru-RU.mod_zygo_online.ini</language>
+		<language tag="ru-RU">languages/ru-RU/ru-RU.mod_zygo_online.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" 
+				addfieldpath="/plugins/user/zygo_profile/fields">
+
+				<field name="moduleclass_sfx" type="text" default="" 
+					label="MOD_ZYGO_ONLINE_FIELD_SUFFIX_LABEL" />
+
+				<field name="avatar" type="zygofields" label="MOD_ZYGO_ONLINE_FIELD_AVATAR_LABEL" 
+					description="MOD_ZYGO_ONLINE_FIELD_AVATAR_DESC" />
+				
+				<field name="count" type="text" default="10" label="MOD_ZYGO_ONLINE_FIELD_COUNT_LABEL" description="MOD_ZYGO_ONLINE_FIELD_COUNT_DESC" />
+				
+				<field name="show_guest" type="list" default="1" label="MOD_ZYGO_ONLINE_FIELD_SHOW_GUESTS_LABEL" description="MOD_ZYGO_ONLINE_FIELD_SHOW_GUESTS_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field name="timeout" type="text" default="15" label="MOD_ZYGO_ONLINE_FIELD_TIMEOUT_LABEL" description="MOD_ZYGO_ONLINE_FIELD_TIMEOUT_DESC" />
+
+				<field name="show_robots" type="list" default="0" label="MOD_ZYGO_ONLINE_FIELD_SHOW_ROBOTS_LABEL" description="MOD_ZYGO_ONLINE_FIELD_SHOW_ROBOTS_DESC" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="robots_types" filter="raw" type="textarea" label="MOD_ZYGO_ONLINE_FIELD_ROBOTS_LABEL" description="MOD_ZYGO_ONLINE_FIELD_ROBOTS_DESC" rows="15" cols="40" />
+
+				<field type="spacer" filter="raw" name="robotspacer" label="MOD_ZYGO_ONLINE_FIELD_SHOW_ROBOTS_DEFAULT" />
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,163 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1505850393
+layout:
+  navigation: {  }
+  /header/:
+    -
+      - 'spacer-4452 5'
+      - 'position-module-1240 30'
+      - 'spacer-8382 65'
+  /intro/:
+    -
+      - 'spacer-5480 35'
+      - 'menu-1386 60'
+      - 'spacer-4109 5'
+  /features/: {  }
+  utility: {  }
+  above: {  }
+  testimonials: {  }
+  expanded: {  }
+  /container-main/:
+    -
+      -
+        'aside 25':
+          -
+            - position-module-6312
+          -
+            - position-module-3545
+      -
+        'mainbar 50':
+          -
+            - position-module-6986
+          -
+            - system-content-7056
+      -
+        'sidebar 25': {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+      class: nopaddingall
+  features:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  utility:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  above:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  testimonials:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  expanded:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  aside:
+    attributes:
+      class: ''
+    block:
+      variations: nomarginall
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+    attributes:
+      class: ''
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  position-module-1240:
+    title: 'Module Instance'
+    attributes:
+      module_id: '182'
+      key: module-instance
+    block:
+      id: ava
+      extra:
+        -
+          style: 'margin-bottom: -7em;'
+  menu-1386:
+    block:
+      id: main-menu
+      extra:
+        -
+          style: 'position:relative;top: 40px;'
+  position-module-6312:
+    title: 'Module Instance'
+    attributes:
+      enabled: 0
+      module_id: '80'
+      key: module-instance
+  position-module-3545:
+    title: 'Module Instance'
+    attributes:
+      module_id: '153'
+      key: module-instance
+  position-module-6986:
+    title: 'Module Instance'
+    attributes:
+      enabled: 0
+      module_id: '149'
+      key: module-instance

@@ -1,0 +1,71 @@
+meta: {  }
+head_bottom: ''
+atoms:
+  -
+    id: fixed-header-3960
+    type: fixed-header
+    title: 'Fixed Header'
+    attributes:
+      enabled: '0'
+      cssselector: '#g-navigation'
+      mobile: disable
+      secondtrigger: '0'
+      secondoffset: ''
+  -
+    id: uikit-1560
+    type: uikit
+    title: 'UIkit for Gantry5'
+    attributes:
+      enabled: '1'
+      jslocation: head
+  -
+    id: headroom-8368
+    type: headroom
+    title: Headroom.js
+    attributes:
+      enabled: '0'
+      cssselector: '#g-navigation'
+      offset: ''
+      animation: slide
+      mobile: disable
+  -
+    id: analytics-5408
+    type: analytics
+    title: 'Google Analytics'
+    attributes:
+      enabled: '0'
+      ua:
+        code: UA-88396745-3
+        anonym: '1'
+        ssl: '0'
+        debug: '0'
+  -
+    id: frameworks-3794
+    type: frameworks
+    title: 'JavaScript Frameworks'
+    attributes:
+      enabled: '1'
+      jquery:
+        enabled: '1'
+        ui_core: '1'
+        ui_sortable: '1'
+      bootstrap:
+        enabled: '1'
+      mootools:
+        enabled: '1'
+        more: '1'
+  -
+    title: 'Back To Top'
+    type: backtotop
+    attributes:
+      enabled: true
+      icon: 'fa fa-angle-double-up'
+    id: backtotop-8597
+  -
+    title: 'Cookie Consent'
+    type: cookie-consent
+    attributes:
+      enabled: true
+      target: _parent
+      theme: dark-bottom
+    id: cookie-consent-6997

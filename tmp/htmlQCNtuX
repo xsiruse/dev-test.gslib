@@ -1,0 +1,11 @@
+<?php 
+$user =& JFactory::getUser();
+$userId= $user->get( 'id' );
+
+require_once JPATH_PLUGINS . '/user/cmavatar/helper.php';
+require_once JPATH_PLUGINS . '/user/cmavatar/cmavatar.php';
+$upload = PlgUserCMAvatar::onContentPrepareData($context, $data)
+$avatar = PlgUserCMAvatarHelper::getAvatar($userId);
+
+echo '<img src="/' . $avatar . '">'
+?>

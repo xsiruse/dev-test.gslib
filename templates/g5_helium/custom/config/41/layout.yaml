@@ -1,0 +1,132 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1505850393
+layout:
+  navigation: {  }
+  header: {  }
+  intro: {  }
+  features: {  }
+  utility: {  }
+  above: {  }
+  testimonials: {  }
+  /expanded/:
+    -
+      - custom-5915
+  /container-main/:
+    -
+      -
+        'aside 25': {  }
+      -
+        'mainbar 50':
+          -
+            - system-content-9895
+      -
+        'sidebar 25': {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  header:
+    inherit:
+      outline: '40'
+      include:
+        - attributes
+        - block
+        - children
+  intro:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  features:
+    type: section
+    inherit:
+      outline: '40'
+      include:
+        - attributes
+        - block
+        - children
+  utility:
+    type: section
+    inherit:
+      outline: '40'
+      include:
+        - attributes
+        - block
+        - children
+  above:
+    type: section
+    inherit:
+      outline: '40'
+      include:
+        - attributes
+        - block
+        - children
+  testimonials:
+    type: section
+    inherit:
+      outline: '40'
+      include:
+        - attributes
+        - block
+        - children
+  expanded:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  aside:
+    inherit:
+      outline: '40'
+      include:
+        - attributes
+        - block
+        - children
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+    attributes:
+      class: ''
+  sidebar:
+    type: section
+    subtype: aside
+    inherit:
+      outline: '40'
+      include:
+        - attributes
+        - block
+        - children
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  custom-5915:
+    title: 'tile top'
+    attributes:
+      html: "<div id=\"tile\" class=\"container-fluid\">\n<div id=\"tile-whole\" class=\"container-fluid col-xl-8\">\n  <div id=\"tile-header\" class=\"d-flex justify-content-between pt-2\">\n    <div class=\"col\"><i class=\"fa fa-plus\" aria-hidden=\"true\"></i></div>\n    <div class=\"col-1 text-right\"><i class=\"fa fa-fw fa-close\" aria-hidden=\"true\"></i></div>\n  </div>\n  <div id=\"tile-model\" class=\" col-md-6 offset-md-3\">\n    <div id=\"tile-model-brend\" class=\"\">Ibanezklf;sl;dfk;ldskfds;lk</div>\n    <div id=\"tile-model-name\" class=\"\">lkdsjflkdsjflkdsjfldskjflkdsjfs</div>\n  </div>\n  <div id=\"tile-body\" class=\"row\">\n    <div id=\"tile-body-center\" class=\"col-sm-12 col-md-8 order-md-6\">\n      <div class=\"fabrikElementReadOnly\" id=\"gsl_recordconditions___Pickup_highlight3_ro\">\n        <ul>\n          <li>\n            <c class=\"obj_instr1 obj_instrtype1 obj_numstr4 obj_picpos1 obj_pictype22\"></c>\n          </li>\n          <li>\n            <c class=\"obj_instr1 obj_instrtype1 obj_numstr4 obj_picpos1 obj_pictype21\"></c>\n          </li>\n        </ul>\n      </div>\n      <div id=\"GSLPic\" style=\"background-image: \nurl(), url(/images/libraryv10/pickup/PHAMEG6.png), url(), url(/images/libraryv10/bridge/BEGFRO6.png), url(/images/libraryv10/headstock/HEGBWK6.png), url(/images/libraryv10/neck/NEG246.png), url(/images/libraryv10/formfactor/FFEGFV.png);\nwidth: 100%;\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    padding: 22% 0;\">\n      </div>\n\n    </div>\n\n    <div id=\"tile-body-left\" class=\"col-sm-6 col-md-2 order-md-1 align-self-center params d-none d-md-block\">\n      <div class=\"well\">Guitar</div>\n      <div>Electric</div>\n      <div>6 Strings</div>\n      <div>Neck-through</div>\n      <div>24 frets</div>\n      <div>Mensura 765</div>\n    </div>\n    <div id=\"tile-body-right\" class=\"col-sm-6 col-md-2 order-md-12 align-self-center params d-none d-md-block\">\n      <div>E-H-G-D-A-E</div>\n      <div>10-46</div>\n      <div>Cubase</div>\n      <div>0.71 mm</div>\n      <div>24</div>\n      <div>6</div>\n    </div>\n  </div>\n  <div id=\"tile-footer\" class=\"d-flex justify-content-between\">\n    <div id=\"tile-footer-userID\" class=\"p-2\">User</div>\n    <div id=\"tile-footer-badges\" class=\"p-2\">V V V</div>\n    <div id=\"tile-footer-switch\" class=\"p-2\">\n      <input type=\"range\" id=\"range-filter\" class=\"preview-bottom-switch-slider\" name=\"points\" min=\"1\" max=\"5\" value=\"1\">\n\n    </div>\n    <div id=\"tile-footer-player\" class=\"\">\n      <div class=\"fabrikSubElementContainer\">\n\n        <audio src=\"https://dev-test.gslib.ru/sound/30/______________36___.mp3\" controls=\"\" controlslist=\"nodownload\">\n\t<!--[if !ie]> -->\n\t<object data=\"https://dev-test.gslib.ru/sound/30/______________36___.mp3\" type=\"audio/x-mpeg\">\n\t\t<param name=\"autoplay\" value=\"false\">\n\t\t<param name=\"width\" value=\"100\">\n\t\t<param name=\"height\" value=\"40\">\n\t\t<param name=\"controller\" value=\"false\">\n\t\t<param name=\"autostart\" value=\"0\">\n\t\tOops!\n\t</object>\n\t<!--<![endif]-->\n\t<!--[if ie]>\n\t<embed\n\t\tsrc=\"https://dev-test.gslib.ru/sound/30/______________36___.mp3\"\n\t\tautostart=\"false\"\n\t\tplaycount=\"true\"\n\t\tloop=\"false\"\n\t\theight=\"50\"\n\t\twidth=\"100\"\n\t\ttype=\"audio/mpeg\"\n\t\t/>\n\t<![endif]-->\n</audio>\n      </div>\n    </div>\n    <div id=\"variations\" class=\"p-2\"></div>\n  </div>\n</div>\n</div>\n<div id=\"filter\" class=\"d-flex justify-content-center pt-2\">\n  <div id=\"filter-add\" class=\"p-2\"></div>\n  <div id=\"filter-fealds\" class=\"d-flex justify-content-around\"><select id=\"trash___drop1\" name=\"trash___drop1[]\" class=\"fabrikinput form-control inputbox input  input-large\" size=\"1\">\n\t<option value=\"\" selected=\"selected\">Инструмент</option>\n\t<option value=\"2\">Bass</option>\n\t<option value=\"1\">Guitar</option>\n</select><select id=\"trash___drop2\" name=\"trash___drop2[]\" class=\"fabrikinput form-control inputbox input  input-large\" size=\"1\">\n\t<option value=\"\" selected=\"selected\">Тип Инструмента</option>\n\t<option value=\"3\"> Electroacoustic</option>\n\t<option value=\"1\">Electric</option>\n\t<option value=\"2\">Semi-acoustic</option>\n</select><select id=\"trash___dro3\" name=\"trash___drop3[]\" class=\"fabrikinput form-control inputbox input  input-large\" size=\"1\">\n\t<option value=\"\" selected=\"selected\">Please select</option>\n\t<option value=\"39\">BC Beast</option>\n\t<option value=\"59\">BC BH</option>\n\t<option value=\"42\">BC Bmbird</option>\n\t<option value=\"60\">BC BV</option>\n\t<option value=\"61\">BC EE</option>\n\t<option value=\"38\">BC Mbird</option>\n\t<option value=\"63\">BC SH</option>\n\t<option value=\"64\">BC SL</option>\n\t<option value=\"65\">BC VO</option>\n\t<option value=\"43\">BC Wbeast</option>\n\t<option value=\"37\">BC Wlock</option>\n\t<option value=\"11\">Byrdland</option>\n\t<option value=\"7\">Capri</option>\n\t<option value=\"55\">D59</option>\n\t<option value=\"62\">DC Ibird</option>\n\t<option value=\"44\">DDC</option>\n\t<option value=\"22\">Dimension</option>\n\t<option value=\"52\">DJW</option>\n\t<option value=\"57\">DPR</option>\n\t<option value=\"25\">Drednought</option>\n\t<option value=\"31\">Drednought B</option>\n\t<option value=\"12\">DVS</option>\n\t<option value=\"18\">ECE</option>\n\t<option value=\"17\">ECS</option>\n\t<option value=\"16\">ERX</option>\n\t<option value=\"13\">ES</option>\n\t<option value=\"6\">Explorer</option>\n\t<option value=\"35\">Firebird</option>\n\t<option value=\"10\">Flying V</option>\n\t<option value=\"48\">GAE</option>\n\t<option value=\"46\">GEC</option>\n\t<option value=\"49\">GML</option>\n\t<option value=\"27\">Grand Auditorium</option>\n\t<option value=\"51\">HCP</option>\n\t<option value=\"47\">HHJ</option>\n\t<option value=\"45\">HHT</option>\n\t<option value=\"33\">HVB</option>\n\t<option value=\"54\">IAE</option>\n\t<option value=\"53\">IAF</option>\n\t<option value=\"40\">IAX</option>\n\t<option value=\"24\">IGO</option>\n\t<option value=\"9\">IRG</option>\n\t<option value=\"14\">IS</option>\n\t<option value=\"30\">ISR</option>\n\t<option value=\"15\">Jaguar B</option>\n\t<option value=\"20\">Jazz</option>\n\t<option value=\"41\">JKB</option>\n\t<option value=\"28\">Jumbo</option>\n\t<option value=\"3\">Les Paul</option>\n\t<option value=\"19\">Mustang B</option>\n\t<option value=\"26\">Orchestra Model</option>\n\t<option value=\"50\">PCC</option>\n\t<option value=\"21\">Precision</option>\n\t<option value=\"36\">PRS</option>\n\t<option value=\"66\">R30</option>\n\t<option value=\"23\">R43</option>\n\t<option value=\"8\">Randy Roads</option>\n\t<option value=\"34\">SB1</option>\n\t<option value=\"4\">SG</option>\n\t<option value=\"56\">SNT</option>\n\t<option value=\"32\">SRT</option>\n\t<option value=\"58\">STH</option>\n\t<option value=\"1\">Stratocaster</option>\n\t<option value=\"2\">Superstrat</option>\n\t<option value=\"5\">Telecaster</option>\n</select>\n\n  </div>\n</div>\n<style>\n  #tile {\n    background: radial-gradient( #f4f5f7, #504f63 35%);\n  }\n\n  #tile-body-center {\n    position: relative;\n    padding: 0;\n    margin: 0;\n  }\n\n  #tile-body-center div,\n  #tile-body-center ul {\n    padding: 0;\n    margin: 0;\n  }\n\n  .params>div {\n\n    width: 100%;\n    border: 0px solid #f4f5f7;\n    padding: 1% 10%;\n    margin: 2% 0;\n    background: rgba(255, 255, 255, 0.33);\n    border-radius: 7px;\n    color: white;\n  }\n\n  #tile-header {\n    color: #7abaff;\n  }\n\n  #tile {\n    color: black;\n    background: radial-gradient(circle, #f4f5f7, #504f63 35%);\n  }\n\n  #tile-body-center {\n    position: relative;\n    padding: 0;\n    margin: 0;\n  }\n\n  #tile-body-center div,\n  #tile-body-center ul {\n    padding: 0;\n    margin: 0;\n  }\n\n  .params>div {\n\n    width: 100%;\n    border: 0px solid #f4f5f7;\n    padding: 1% 10%;\n    margin: 2% 0;\n    background: rgba(255, 255, 255, 0.33);\n    border-radius: 7px;\n    color: white;\n  }\n\n  #tile-header {\n    color: #7abaff;\n  }\n\n  #tile-model {\n    text-align: right;\n    position: absolute;\n    color: black;\n    font-size: calc(1rem + 1.5vw);\n  }\n\n  #tile-model-name {\n    margin: -4% 0 0;\n  }\n  #tile-model-brend {\n    margin:0 4% 0 0;\n  }\n\n  #tile-footer-player audio {\n    width: 95px;\n  }\n\n  #tile-footer-player audio::-webkit-media-controls-current-time-display,\n  #tile-footer-player audio::-webkit-media-controls-time-remaining-display,\n  #tile-footer-player audio::-webkit-media-controls-timeline-container,\n  #tile-footer-player audio::-webkit-media-controls-timeline,\n  #tile-footer-player audio::-webkit-media-controls-toggle-closed-captions-button,\n  #tile-footer-player audio::-webkit-media-controls-mute-button {\n    display: none;\n  }\n</style>"

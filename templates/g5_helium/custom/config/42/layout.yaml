@@ -1,0 +1,144 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1481092873
+layout:
+  navigation: {  }
+  header: {  }
+  intro: {  }
+  features: {  }
+  utility: {  }
+  above: {  }
+  testimonials: {  }
+  /expanded/:
+    -
+      - custom-2969
+    -
+      - system-content-1587
+  /container-main/:
+    -
+      -
+        'aside 20': {  }
+      -
+        'mainbar 60': {  }
+      -
+        'sidebar 20': {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  intro:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  features:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  utility:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  above:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  testimonials:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  expanded:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      variations: ''
+  aside:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+    attributes:
+      class: ''
+      variations: ''
+  sidebar:
+    type: section
+    subtype: aside
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  custom-2969:
+    title: loader
+    attributes:
+      enabled: 0
+      html: "<div id=\"tile_def\" class=\"container-fluid\">  \n<div id=\"tile-whole\" class=\"container-fluid col-xl-8\">\n    <div id=\"tile-header\" class=\"d-flex justify-content-between pt-2\">\n      <div class=\"col\">\n        <p></p>\n      </div>\n      <div class=\"col-1 text-right\"><i class=\"fa fa-fw fa-close\" aria-hidden=\"true\"></i></div>\n    </div>\n    <div id=\"tile-model\" class=\" col-md-6 offset-md-3\">\n      <div id=\"tile-model-brend\" class=\"\"> EST13</div>\n      <div id=\"tile-model-name\" class=\"\"> DE CONTI</div>\n    </div>\n    <div id=\"tile-body\" class=\"row\">\n      <div id=\"tile-body-center\" class=\"col-sm-12 col-md-8 order-md-6\">\n        <div class=\"Pickup-highlight-section\">\n        </div>\n        <div>\n          <div id=\"GSLPic\" style=\"background-image: \nurl(/images/libraryv10/noguit.png);\nwidth: 100%;\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    padding: 22% 0;\">\n          </div>\n        </div>\n      </div>\n      <div id=\"tile-body-left\" class=\"col-sm-6 col-md-2 order-md-1 align-self-center params d-none d-md-block\">\n        <div>\n          <div class=\"fabrikElementReadOnly\" id=\"gsl_recordconditions___instrument_ro\">\n            <!-- 1 -->\n          </div>\n        </div>\n        <div>Electric</div>\n        <div>6 Strings</div>\n        <div>Neck-through</div>\n        <div>24 frets</div>\n        <div>Mensura 765</div>\n      </div>\n      <div id=\"tile-body-right\" class=\"col-sm-6 col-md-2 order-md-12 align-self-center params d-none d-md-block\">\n        <div>E-H-G-D-A-E</div>\n        <div>10-46</div>\n        <div>Cubase</div>\n        <div>0.71 mm</div>\n        <div>24</div>\n        <div>6</div>\n      </div>\n    </div>\n    <div id=\"tile-footer\" class=\"d-flex justify-content-between\">\n      <div id=\"tile-footer-userID\" class=\"p-2\">User</div>\n      <div id=\"tile-footer-badges\" class=\"p-2\">V V V</div>\n      <div id=\"tile-footer-switch\" class=\"p-2\">\n        <div class=\"fb_el_gsl_recordconditions___Pickup_switch_tgl_ro\" id=\"gsl_recordconditions___Pickup_switch_tgl_ro\"><input type=\"range\" id=\"range-filter\" class=\"slider slider1\" name=\"points\" min=\"1\" max=\"5\" value=\"1\"> </div>\n      </div>\n      <div id=\"tile-footer-player\" class=\"\">\n        <div class=\"fabrikSubElementContainer\">\n\n          <audio src=\"https://dev-test.gslib.ru/sound/30/______________36___.mp3\" controls=\"\" controlslist=\"nodownload\">\n\t<!--[if !ie]> -->\n\t<object data=\"https://dev-test.gslib.ru/sound/30/______________36___.mp3\" type=\"audio/x-mpeg\">\n\t\t<param name=\"autoplay\" value=\"false\">\n\t\t<param name=\"width\" value=\"100\">\n\t\t<param name=\"height\" value=\"40\">\n\t\t<param name=\"controller\" value=\"false\">\n\t\t<param name=\"autostart\" value=\"0\">\n\t\tOops!\n\t</object>\n\t<!--<![endif]-->\n\t<!--[if ie]>\n\t<embed\n\t\tsrc=\"https://dev-test.gslib.ru/sound/30/______________36___.mp3\"\n\t\tautostart=\"false\"\n\t\tplaycount=\"true\"\n\t\tloop=\"false\"\n\t\theight=\"50\"\n\t\twidth=\"100\"\n\t\ttype=\"audio/mpeg\"\n\t\t/>\n\t<![endif]-->\n</audio>\n        </div>\n      </div>\n      <div id=\"variations\" class=\"p-2\"></div>\n    </div>\n</div>\n</div>"
+    block:
+      id: tile_loader
+  system-content-1587:
+    block:
+      variations: 'nomarginall nopaddingall'

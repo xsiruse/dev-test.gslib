@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/user/dev-test.gslib.ru_test/public_html
+    - / -R images $DEPLOYPATH

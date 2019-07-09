@@ -1,0 +1,35 @@
+name: _offline
+timestamp: 1555874112
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: _offline
+  timestamp: 1481092873
+positions: {  }
+sections:
+  navigation: Navigation
+  intro: Intro
+  features: Features
+  utility: Utility
+  above: Above
+  testimonials: Testimonials
+  expanded: Expanded
+  header: Header
+  mainbar: Mainbar
+  sidebar: Sidebar
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  content:
+    system-content-3997: 'Page Content'
+  messages:
+    system-messages-9096: 'System Messages'
+  logo:
+    logo-9571: 'Logo / Image'
+  copyright:
+    copyright-1736: Copyright
+  spacer:
+    spacer-8094: Spacer
+  totop:
+    totop-8670: 'To Top'
+inherit: {  }

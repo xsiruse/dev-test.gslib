@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>RS-CoolMP3Player</name>
+    <author>RS Web Solutions</author>
+	<creationDate>August 2013</creationDate>
+	<copyright>Copyright (c) 2010-2015 RS Web Solutions - Development Team</copyright>
+	<license>This extension is released under the GNU/GPL License</license>
+	<authorEmail>support@rswebsols.com</authorEmail>
+	<authorUrl>www.rswebsols.com</authorUrl>
+    <version>1.3</version>
+    <description>RS Cool Mp3 Player is a flash based minimalistic Mp3 player with a twist, perfect for your website. It supports the basic functions of an mp3 player- play, pause, draggable volume bar, sound visualizer. It includes a special sound visualizer that changes when you drag the volume bar.</description>
+    <files>
+        <filename>mod_rscoolmp3player.xml</filename>
+        <filename module="mod_rscoolmp3player">mod_rscoolmp3player.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+		<filename>changelog.txt</filename>
+		<filename>gpl-3.0.txt</filename>
+        <folder>tmpl</folder>
+		<folder>xml</folder>
+		<folder>swf</folder>
+		<folder>js</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+				<field name="rsws_module_width" type="text" default="290" label="Module Width" description="Please specify the module width in pixel. (default value: 290)" filter="integer" />
+				<field name="rsws_module_margin" type="text" default="10" label="Margin between Player" description="If you are listing more than 1 songs, then please specify the gap between 2 songs. (default value: 10)" filter="integer" />
+            </fieldset>
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" filter="integer" />
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+			<fieldset name="mp3_songs" label="Song Settings">
+				<field name="rsws_artistName" type="text" default="Artist A" label="Name of Artist" description="Specify the name of artist. (Example: Artist A)" />
+				<field name="rsws_songName" type="text" default="Song A" label="Name of MP3 Song" description="Specify the name of mp3 song. (Example: Song A)" />
+				<field name="rsws_songURL" type="text" default="http://www.yoursite.com/mp3/song1.mp3" label="Location/URL of Song" description="Specify the name of song. (Example: http://www.song.com/mp3/song1.mp3)" />
+			</fieldset>
+			<fieldset name="mp3_player" label="Player Settings">
+				<field name="rsws_width" type="text" default="281" label="Player Width" description="Please specify the Width of a single mp3 player button. (default value: 281)" filter="integer" />
+				<field name="rsws_height" type="text" default="78" label="Player Height" description="Please specify the Height of a single mp3 player button. (default value: 78)" filter="integer" />
+				<field name="rsws_backgroundColor" type="hidden" default="#ffffff" />
+				<field name="rsws_autoplay" type="hidden" default="2" />
+				<field name="rsws_margin" type="text" default="5" label="Margin" description="Margin in pixel. (default value: 5)" filter="integer" />
+				<field name="rsws_strokeColor" type="hidden" default="#90C84B" />
+				<field name="rsws_fillColor" type="hidden" default="#414042" />
+				<field name="rsws_backColor" type="hidden" default="#FFFFFF" />
+				<field name="rsws_backOverColor" type="hidden" default="#DEECBD" />
+				<field name="rsws_signStrokeColor" type="hidden" default="#4B4B4B" />
+				<field name="rsws_signFillColor" type="hidden" default="#83B04D" />
+			
+				<field name="rsws_initLevel" type="hidden" default="50" />
+				<field name="rsws_backStrokeColor" type="hidden" default="#4B4B4B" />
+				<field name="rsws_backFillColor" type="hidden" default="#83B04D" />
+				<field name="rsws_signColor" type="hidden" default="#E7E8E9" />
+				<field name="rsws_signOverColor" type="hidden" default="#4B4B4B" />
+				<field name="rsws_percentTextColor" type="hidden" default="#E7E8E9" />
+				<field name="rsws_percentTextmarginX" type="hidden" default="5" />
+				<field name="rsws_percentTextpositionY" type="hidden" default="top" />
+				<field name="rsws_visualizerbackColor" type="hidden" default="#4B4B4B" />
+				<field name="rsws_visualizerwavesColor" type="hidden" default="#FFFFFF" />
+			</fieldset>
+			<fieldset name="song_text" label="Player Text">
+				<field name="rsws_artistColor" type="hidden" default="#E7E8E9" />
+				<field name="rsws_artistFontSize" type="text" default="14" label="Artist Font Size" description="Font Size of the artist text in pixel (default value: 14)" filter="integer" />
+				<field name="rsws_songColor" type="hidden" default="#E7E8E9" />
+				<field name="rsws_songFontSize" type="text" default="12" label="Song Font Size" description="Font Size of the song text in pixel (default value: 12)" filter="integer" />
+			</fieldset>
+			<fieldset name="additional" label="Additional Settings">
+				<field type="note" name="rsws_note1" class="alert alert-info" label="&lt;span style='font-weight:normal;'&gt;&lt;b&gt;SWFOBJECT Insertion:&lt;/b&gt; By default this is 'YES'. That means the module will add the required SWFOBJECT JavaScript library file. But if you think the SWFOBJECT is already inserted in your website (by your template or by any other component/module/plugin) then you can set it to 'NO' so it will prevent the double insertion of the same file.&lt;/span&gt;" />
+				<field name="rsws_insertSWFOBJECT" type="list" default="local" label="Insert SWFOBJECT File" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>			
+				<field type="note" name="rsws_note2" class="alert" label="&lt;span style='font-weight:normal;'&gt;&lt;b&gt;TROUBLESHOOTING:&lt;/b&gt; If this module works properly in your website, then this troubleshooting steps are totally not necessary for you. But if you notice some issue like 'Visualizer Wave is not showing properly' or similar, then choose 'Use Exact URL' to 'YES' and set the exact website URL below.&lt;/span&gt;" />
+				<field name="rsws_use_exact_url" type="list" default="2" label="Use Exact URL" description="Set to 'YES' to use the 'Exact URL', otherwise set to 'NO'. (Default: 'NO')">
+					<option value="1">YES</option>
+					<option value="2">NO</option>
+				</field>
+				<field size="60" name="rsws_exact_url" type="text" default="http://www.yoursite.com/" label="Exact URL" description="The URL of your website, make sure it is properly formatted. (Example: http://www.yoursite.com/)" />
+			</fieldset>
+			<fieldset name="doc" label="Help">
+				<field type="note" name="rsws_note3" class="alert alert-info" label="Documentation:" description="To read documentation / step-by-step setup guide please &lt;a target='_blank' href='http://www.rswebsols.com/doc/rscoolmp3player-support'&gt;Click Here&lt;/a&gt;." />
+			</fieldset>
+        </fields>
+    </config>
+</extension>

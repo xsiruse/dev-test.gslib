@@ -1,0 +1,9 @@
+<?php
+JHTML::_('behavior.modal');  
+$user =& JFactory::getUser();
+$username = $user->get( 'username' );
+if ($user->get('id')!=0) {
+echo '<a class="modal btn" href="index.php?option=com_users&view=login&templateStyle=29" rel="{handler:'iframe', size:{ x: 800, y: 700 }}" >' . $username . '</a>';
+} 
+else {echo '<a class="modal btn" href="index.php?option=com_users&view=login&templateStyle=29" >Вход</a>';} 
+?>

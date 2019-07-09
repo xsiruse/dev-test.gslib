@@ -1,0 +1,6 @@
+<?php 
+include_once (JPATH_ROOT."/plugins/user/zygo_profile/zygo_helper.php");
+$avatar_links = ZygoHelper::getAvatar($uid);
+
+echo  '<img src="' . $avatar_links .  '">';
+?>

@@ -1,0 +1,97 @@
+css:
+  -
+    location: ''
+    inline: "#login-top {\n  border-radius: 1rem;\n  position: absolute;\n  top: 120%;\n  right: 0.5%;\n  z-index: 1;\n  width: max-content;\n  background: rgba(10, 10, 10, 0.8);\n  display: block;\n}\n\n#main-menu > [id^=\"menu-\"] {\n  bottom: 0;\n  position: absolute;\n  margin: 0;\n  width: 100%;\n}\n.g-menu-item-title,\n.g-menu-item-container {\n  color: black;\n}\n\n@media (min-width: 766px) {\n  .g-toplevel {\n    display: -webkit-flex;\n    -webkit-justify-content: space-around;\n    display: flex;\n    justify-content: space-around;\n  }\n}\nspan.g-menu-item-title {\n  font-weight: 300;\n  font-style: normal;\n  font-family: \"Open Sans Condensed\", sans-serif;\n}\n.g-main-nav .g-toplevel > li.g-parent .g-menu-parent-indicator:after {\n  width: 1rem;\n  padding: 0.1rem 0.25rem 0.25rem 0rem;\n  height: 1rem;\n  \n}"
+    extra: {  }
+    priority: '0'
+    name: 'Menu Buttons'
+  -
+    location: ''
+    inline: "#g-page-surround {\nbackground:transparent;\n}\n#g-sidebar, #g-mainbar, #g-aside{\n    height: 100%;\n}"
+    extra: {  }
+    priority: '0'
+    name: Body
+  -
+    location: ''
+    inline: "@media only all and (max-width: 47.938rem) {\n#login-bor {\n    \n}\n#login-gold {\n    display:none\n}\n#login-but {\nborder-radius:5px;\nwidth: 100%;\n    padding: 0;\n    background: 0;\n    box-shadow: inset 0 0 50px -10px black;\n    font-family: 0;\n    font-size: inherit;\n    color: white;\n    text-align: center;\n    vertical-align: middle;\n}\n#login-top {\n   \n      top: 51px;\n    left: 5px;\n}\n}\n#login-form .input-prepend .input-small, #login-form .input-append .input-small {\nwidth:max-content;\n}"
+    extra: {  }
+    priority: '0'
+    name: mobile-login
+  -
+    location: ''
+    inline: "/*sub-menu surroundings*/\n#g-intro .g-main-nav .g-dropdown {\n      margin: 0;\n}\n.g-main-nav .g-standard > .g-dropdown, .g-main-nav .g-fullwidth > .g-dropdown {\n    margin: 0;\n}\n\n/*sub-menu border & background*/\n#g-intro .g-main-nav .g-dropdown > .g-dropdown-column {\nbackground:#f4f5f7;\n}\nul.g-sublevel .g-menu-item-title {\n    \n}\n/*sub-menu indicator*/\n#g-intro .g-main-nav .g-toplevel > li > .g-menu-item-container {\n}\n#g-intro  .g-main-nav  .g-toplevel\n  > li  > .g-menu-item-container  .g-menu-parent-indicator {\n}\n.g-main-nav .g-standard > .g-dropdown .g-dropdown, .g-main-nav .g-fullwidth > .g-dropdown .g-dropdown {\n     top: 0;\n}\n\n/*sub-manu buttons*/\n.g-main-nav .g-sublevel > li {\n  text-align: center;\nmargin:0;\n  padding: 0 0 0.2345rem 0;\n}\n.g-main-nav .g-sublevel > li.active,\n.g-main-nav .g-sublevel > li:hover {\n  background: #504f63;\ncolor:white !important;\n}\n.g-main-nav .g-sublevel > li[class^=\"g-menu-item-user-area\"].active,\n.g-main-nav .g-sublevel > li[class^=\"g-menu-item-user-area\"]:hover, .g-sublevel .usermenu > ul > li:hover, .g-sublevel .usermenu > ul > li.active{\n  background: #504f63;\ncolor:white !important;\n}\n.g-main-nav .g-sublevel > li[class*=\"g-menu-item-user-area\"].active, .g-main-nav .g-sublevel > li[class*=\"g-menu-item-user-area\"]:hover {\n    background: #504f6300 !important;\n}\n/*sub-menu title*/\n.g-main-nav .g-sublevel > li > .g-menu-item-container > .g-menu-item-content {\n  word-break: normal;\n  text-transform: uppercase;\n  vertical-align: top;\n}\n\n/*sub-sub arrow&cross*/\n.g-main-nav .g-sublevel > li.g-parent .g-menu-parent-indicator:after {\n  \n}\n.g-main-nav .g-sublevel > li.g-parent .g-menu-parent-indicator {\n  \n}\n.g-main-nav .g-standard .g-sublevel > li.g-selected > a >  span > .g-menu-item-title {\n    color: white;\n}\n.g-main-nav .g-sublevel > li > .g-menu-item-container {\n    font-weight: inherit;\n}\n.g-sublevel .usermenu > ul {\n    width: 100%;\n}\n.g-sublevel .usermenu > ul > li {\n    padding: 5% !important;\n    text-align: left;\nmargin:0 !important;\nwidth: 100%;\n}\n.g-sublevel .usermenu > ul {\n    padding: 0 !important;\n}\n.g-sublevel .usermenu > ul > li:hover > a, .g-sublevel .usermenu > ul > li.active > a{\ncolor:white;\n}\n"
+    extra: {  }
+    priority: '0'
+    name: sub-menu
+  -
+    location: ''
+    inline: "@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n#g-intro div[id^=\"logo-\"] svg {\n    max-height: 50px;\n}\n#group33 label.radio input[type=\"radio\"] + span img, #group34 label.radio input[type=\"radio\"] + span img\n{\nposition: relative; \nz-index: 1; \npointer-events: none;\n}\n\t}\n\n/*@supports (-ms-ime-align:auto) {\n  div:after{\n    content:'';\n    background:transparentize(darken(blue, 8), .5);\n    position: absolute;\n    top:0;\n    bottom:0;\n    width:100%;\nz-index:-100;\n  }\n}*/\n"
+    extra: {  }
+    priority: '0'
+    name: 'IE fix'
+  -
+    location: ''
+    inline: "/*Picture not to move over the eages\n.fabrik_list_28_group_41 > div,\n#list_33_com_fabrik_33 #GSLPic {\n  transform: rotate(-45deg);\n}*/\n/*Remove Add/import/ clear buttons*/\n#listform_33_com_fabrik_33 ul.nav.nav-pills.pull-left {\n  display: none;\n}\n/*Lean brand&model to bottom*/\n*[ID^=\"list_\"] *[class*=\"BrandAndModel\"] {\n  display: flex;\n  justify-content: space-between;\n  padding: 5%;\n  position: absolute;\n  width: 100%;\n  bottom: 0;\n  background: rgba(0, 0, 0, 0.5);\n  color: white;\n  z-index: 20;\n  left: 0;\n  border-bottom-left-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n/*no lines between elements*/\n.row-striped .row-fluid:not(:last-child) {\n  border-bottom: 0px solid #e0e0e5;\n}\n.well {\n  padding: 0 0 3%;\n}\n/*Place CreatedBy next to butons*/\n#list_28_com_fabrik_28 .gsl_product___AddRecCon {\n  position: absolute;\n  top: 2.25rem;\n  left: 8.1rem;\n  width: 40%;\n  text-transform: capitalize;\n}\n"
+    extra: {  }
+    priority: '0'
+    name: 'List GSL_Product'
+  -
+    location: ''
+    inline: "*[class^=\"fabrikGroup\"] {\n  position: relative;\n}\n#tile-body-center li, div[id^=\"gsl_recordconditions___Pickup_highlight\"] li {\n  display: inline;\n}\ndiv[id*=\"gsl_recordconditions___Pickup_highlight\"] input.fabrikinput {\n  display: none;\n}\ndiv[class*=\"fb_el_gsl_recordconditions___Pickup_highlight\"] {\n  position: absolute;\nwidth:100%;\n}\n\n@media only all {\n  *[id*=\"gsl_recordconditions___Pickup_highlight\"] > div > [class*=\"span\"],\n  *[id*=\"gsl_recordconditions___Pickup_highlight\"]\n    > .row-fluid\n    [class*=\"span\"] {\n    display: initial;\n    float: left;\n    width: auto;\n    margin-left: 0;\n  }\n}\n\n*[class*=\"obj_\"] {\n  position: absolute;\n  top: 0;\n  left: -15%;\n  border-radius: 55% / 15%;\n}\n\n.obj_instr1.obj_instrtype1.obj_picpos1.obj_pictype21 {\n  margin-left: 43.6%;\n}\n.obj_numstr1 {\n    padding: 3.63% 0.53%;\n    margin-top: 18.4%;\n    border-radius: 30% / 5%;\n}\n.obj_numstr6 {\n  padding: 3.7% 0.7%;\n  margin-top: 17.9%;\n  border-radius: 65% / 14%;\n}\n.obj_numstr12,\n.obj_numstr7 {\n  padding: 2.6% 0.7%;\n  margin-top: 19%;\n}\n.obj_picpos1.obj_pictype22 {\n  margin-left: 45%;\n}\n.obj_instr1.obj_instrtype1.obj_picpos2.obj_pictype13 {\n  margin-left: 48.7%;\n}\n.obj_instr1.obj_instrtype1.obj_picpos3.obj_pictype13 {\n  margin-left: 53.1%;\n}\n.obj_picpos1.obj_pictype13 {\n  margin-left: 44.4%;\n}\n.obj_picpos2.obj_pictype22 {\n  margin-left: 49.4%;\n}\n.obj_picpos2.obj_pictype21 {\n  margin-left: 48%;\n}\n.obj_picpos3.obj_pictype21 {\n  margin-left: 52.4%;\n}\n.obj_picpos3.obj_pictype22 {\n  margin-left: 53.8%;\n}\ninput[type=\"checkbox\"] + span > *[class*=\"obj_\"]:hover {\n  background: #ffff0066;\n}\ninput[type=\"checkbox\"]:checked + span > *[class*=\"obj_\"],\nli > *[class*=\"obj_\"],\ndiv[id$=\"_ro\"] > *[class*=\"obj_\"] {\n  box-shadow: 0 0 3px 3px greenyellow;\n}\ninput[type=\"checkbox\"]:checked + span > .obj_pictype21,\nli > .obj_pictype21,\ndiv[id$=\"_ro\"] > .obj_pictype21 {\n  box-shadow: -2px 0 2px 2px greenyellow !important;\n  border-top-right-radius: 0 !important;\n  border-bottom-right-radius: 0 !important;\n}\ninput[type=\"checkbox\"]:checked + span > .obj_pictype22,\nli > .obj_pictype22,\ndiv[id$=\"_ro\"] > .obj_pictype22 {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n  box-shadow: 2px 0 2px 2px greenyellow;\n}\n.obj_numstr4 {\n  margin-top: 18.5%;\n  padding: 3% 0.7%;\n}\n\n.obj_numstr5 {\n  padding: 3.5% 0.7%;\n  margin-top: 18.1% !important;\n  border-radius: 50% / 12%;\n}\n\n.obj_instr1.obj_instrtype2.obj_pictype13 {\n  padding: 2.8% 1.1%;\n}\n.obj_instr2.obj_instrtype1.obj_pictype13 {\n    padding: 3.63% 0.73%;\n}\n.obj_numstr13 {\n  margin-top: 19%;\n}\n.obj_numstr15, .obj_numstr13 {\n    padding: 2.9% 0.7%;\n    margin-top: 18.87%;\n}\n.obj_instr1.obj_instrtype2.obj_picpos1.obj_pictype13 {\n  margin-left: 42%;\n}\n.obj_instr1.obj_instrtype2.obj_picpos2.obj_pictype13 {\n  margin-left: 47%;\n}\n.obj_instr1.obj_instrtype2.obj_picpos3.obj_pictype13 {\n  margin-left: 51.8%;\n}\n.obj_instr1.obj_instrtype2.obj_picpos2.obj_pictype21 {\n    margin-left: 46.7%;\n}\n.obj_instr1.obj_instrtype2.obj_picpos1.obj_pictype22 {\n    margin-left: 43.2%;\n}\n.obj_instr1.obj_instrtype2.obj_picpos1.obj_pictype21 {\n    margin-left: 41.8%;\n}\n.obj_instr1.obj_instrtype2.obj_picpos2.obj_pictype22 {\n    margin-left: 48.1%;\n}\n.obj_instr1.obj_instrtype2.obj_picpos3.obj_pictype21 {\n    margin-left: 51.6%;\n}\n.obj_instr1.obj_instrtype2.obj_picpos3.obj_pictype22 {\n    margin-left: 53%;\n}\n.obj_instr2.obj_instrtype1.obj_picpos1.obj_pictype21 {\n    margin-left: 34.9%;\n}\n.obj_instr2.obj_instrtype1.obj_picpos1.obj_pictype22 {\n    margin-left: 35.98%;\n}\n.obj_instr2.obj_instrtype1.obj_picpos3.obj_pictype21 {\n    margin-left: 41.15%;\n}\n.obj_instr2.obj_instrtype1.obj_picpos3.obj_pictype22 {\n    margin-left: 42.23%;\n}\n.obj_instr2.obj_instrtype1.obj_picpos1.obj_pictype13 {\n    margin-left: 35.3%;\n}\n.obj_instr2.obj_instrtype1.obj_picpos3.obj_pictype13 {\n    margin-left: 41.4%;\n}"
+    extra: {  }
+    priority: '0'
+    name: Hieghlight
+  -
+    location: ''
+    inline: ".range-field {\n  width: 100%;\n}\n\n/*.slider {\n  -webkit-appearance: none;\n  height: 20px;\n  border-radius: 15px;\n  background: linear-gradient(0deg, black, dimgray, black);\n  outline: none;\n\n  border: 0.5rem solid gold;\n  border-bottom-color: darkgoldenrod;\n  border-right-color: darkgoldenrod;\n  border-radius: 14% / 90%;\n}\n\n.slider::-webkit-slider-runnable-track {\n  margin: 0 -20%;\n}\n.slider::-webkit-slider-thumb {\n  color: green;\n  -webkit-appearance: none;\n  appearance: none;\n  width: 50px;\n  height: 50px;\n  border-radius: 80% 50% 80% 80%;\n  transform: rotate(45deg);\n  background: radial-gradient(\n      closest-side at 30% 30%,\n      rgba(255, 255, 255, 0.95),\n      rgba(0, 0, 0, 0.95)\n    ),\n    rgba(10, 10, 10, 0.95);\n  box-shadow: inset -5px -5px 20px -5px rgba(255, 255, 255, 0.7);\n  cursor: pointer;\n  \n}\n.slider1::-webkit-slider-thumb {\n  border-radius: 80% 30% 80% 80%;\n  transform: rotate(45deg);\n  background: radial-gradient(\n      closest-side at 30% 30%,\n      rgba(255, 255, 255, 0.95),\n      rgba(0, 0, 0, 0.95)\n    ),\n    rgba(10, 10, 10, 0.95);\n  box-shadow: inset -5px -5px 20px -5px rgba(255, 255, 255, 0.7);\n}\n.slider2::-webkit-slider-thumb {\n  border-radius: 80% 50% 80% 80%;\n  transform: rotate(45deg);\n  background: radial-gradient(\n      closest-side at 30% 30%,\n      rgba(255, 255, 255, 0.95),\n      rgba(0, 0, 0, 0.95)\n    ),\n    rgba(10, 10, 10, 0.95);\n  box-shadow: inset -5px -5px 20px -5px rgba(255, 255, 255, 0.7);\n}\n.slider3::-webkit-slider-thumb {\n  border-radius: 80% 80% 80% 80%;\n  background: radial-gradient(\n      closest-side at 30% 30%,\n      rgba(255, 255, 255, 0.95),\n      rgba(0, 0, 0, 0.95)\n    ),\n    rgba(10, 10, 10, 0.95);\n  box-shadow: inset -5px -5px 20px -5px rgba(255, 255, 255, 0.7);\n}\n.slider4::-webkit-slider-thumb {\n  border-radius: 80% 80% 80% 50%;\n  transform: rotate(45deg);\n  background: radial-gradient(\n      closest-side at 30% 30%,\n      rgba(255, 255, 255, 0.95),\n      rgba(0, 0, 0, 0.95)\n    ),\n    rgba(10, 10, 10, 0.95);\n  box-shadow: inset -5px -5px 20px -5px rgba(255, 255, 255, 0.7);\n}\n.slider5::-webkit-slider-thumb {\n  border-radius: 80% 80% 80% 30%;\n  transform: rotate(45deg);\n  background: radial-gradient(\n      closest-side at 30% 30%,\n      rgba(255, 255, 255, 0.95),\n      rgba(0, 0, 0, 0.95)\n    ),\n    rgba(10, 10, 10, 0.95);\n  box-shadow: inset -5px -5px 20px -5px rgba(255, 255, 255, 0.7);\n}\n.slider::-webkit-slider-thumb:after {\n  color: white;\n  content: \"num\";\n}\n.slider::-moz-range-thumb {\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  background: radial-gradient(\n      closest-side at 42% 30%,\n      rgba(255, 255, 255, 1)5%,\n      rgba(0, 0, 0, 0.95)90%\n    ),\n    rgba(10, 10, 10, 0.95);\n  box-shadow: inset -1px -5px 20px -5px rgba(255, 255, 255, 0.7);\n  cursor: pointer;\n}*/"
+    extra: {  }
+    priority: '0'
+    name: Switch-pos
+  -
+    location: ''
+    inline: "#group33 label.radio input[type=\"radio\"]:checked + span img,\n#group34 label.radio input[type=\"radio\"]:checked + span img {\n  background: #00b3ff;\n  border-radius: 30px;\n}\n\n#group33 label.radio input[type=\"radio\"],\n#group34 label.radio input[type=\"radio\"] {\n  display: none;\n}\n\n#group33 .row-fluid,\n#group34 .row-fluid {\n  display: flex;\n  justify-content: center;\n}\nform[id^=\"form_28\"] .dbjoin-description {\n    justify-content: space-around;\n    margin: auto;\n    display: flex;\n    width: 90%;\n    flex-wrap: wrap;\n}\n\nform[id^=\"form_28\"] .dbjoin-description > div {\n  display: inline-block !important;\n  margin: auto;\n  padding: 0;\n  width: 100px;\n}\n\n.dropChacked {\n  background: #00b3ff;\n  border-radius: 30px;\n}\n#gsl_product___FormFactor, #gsl_product___Bridge, #gsl_product___Headstock\n{\ndisplay:none;\n}\n#ajax_links .page-header, #ajax_links form .row-fluid.nav {\n    display: none;\n}\n#gsl_product___FF_family {\n    overflow-x: auto;\n    overflow-y: hidden;\n    display: block;\n}\n\n\n#gsl_product___FF_family > option {\n    display: inline-block;\n    padding: 0.5% 1%;\n    border-radius: 5px;\n}"
+    extra: {  }
+    priority: '3'
+    name: 'Product form styling'
+  -
+    location: ''
+    inline: ".gallery-front .nav, .gallery-front > p {\n    display: none;\n}\n.gsl_recordconditions___view_button {\n    width: 100%;\n    position: absolute;\n    top: 45%;\n    text-align: center;\n    margin: 0 0 0 -0.75rem;\n}\n\n#listform_33_mod_fabrik_list_192 .full-icon-search:before {\n    color: hsla(0, 0%, 0%, 0.5);\n    content: \"\\53\";\n    font-family: 'IcoMoon';\n    font-style: normal;\n    font-size: 8vw;\n    speak: none;\n}\n.fb_el_gsl_recordconditions___view_button_ro, #listform_33_mod_fabrik_list_192 .btn-group {\n    display: none;\n}"
+    extra: {  }
+    priority: '0'
+    name: Gallery-aside
+  -
+    location: ''
+    inline: "@media (max-width: 47.938rem){\n#g-intro .g-logo {\n    margin: 0 !important;\n    padding-left: 0 !important;\n}\n}"
+    extra: {  }
+    priority: '0'
+    name: logo-mob-fix
+  -
+    location: ''
+    inline: ".usermenu > ul {\n    border: 0 !important;\n    padding: 1% !important;\n}\n.usermenu > ul > li {\n     border: 0 !important;\n    padding: 0 10% !important;\n    word-break: normal;\n}"
+    extra: {  }
+    priority: '0'
+    name: usermenu
+  -
+    location: 'gantry-assets://custom/css/bootstrap.min.css'
+    inline: ''
+    extra: {  }
+    priority: '0'
+    name: 'Bootstrap 4'
+  -
+    location: ''
+    inline: "  #tile, #tile_def {\n    background: radial-gradient(circle, #f4f5f7, #504f63 35%); \n}\n\n  }\n\n  #tile-body-center {\n    position: relative;\n    padding: 0;\n    margin: 0;\n  }\n\n  #tile-body-center div,\n  #tile-body-center ul {\n    padding: 0;\n    margin: 0;\n  }\n\n  .params>div {\n\n    width: 100%;\n    border: 0px solid #f4f5f7;\n    padding: 1% 10%;\n    margin: 2% 0;\n    background: rgba(255, 255, 255, 0.33);\n    border-radius: 7px;\n    color: white;\n  }\n\n  #tile-header {\n    color: #7abaff;\n  }\n\n  #tile {\n    color: black;\n    background: radial-gradient(circle, #f4f5f7, #504f63 35%);\n  }\n\n  #tile-body-center {\n    position: relative;\n    padding: 0;\n    margin: 0;\n  }\n\n  #tile-body-center div,\n  #tile-body-center ul {\n    padding: 0;\n    margin: 0;\n  }\n\n  .params>div {\n\n    width: 100%;\n    border: 0px solid #f4f5f7;\n    padding: 1% 10%;\n    margin: 2% 0;\n    background: rgba(255, 255, 255, 0.33);\n    border-radius: 7px;\n    color: white;\n  }\n\n  #tile-header {\n    color: #7abaff;\n  }\n\n  #tile-model {\n    text-align: right;\n    position: absolute;\n    color: black;\n    font-size: calc(1rem + 1.5vw);\n  }\n\n  #tile-model-name {\n    margin: -4% 0 0;\n  }\n  #tile-model-brend {\n    margin:0 4% 0 0;\n  }\n\n #tile-footer-player audio {\n    width: 100px;\n  }\n\n  #tile-footer-player audio::-webkit-media-controls-current-time-display,\n  #tile-footer-player audio::-webkit-media-controls-time-remaining-display,\n  #tile-footer-player audio::-webkit-media-controls-timeline-container,\n  #tile-footer-player audio::-webkit-media-controls-timeline,\n  #tile-footer-player audio::-webkit-media-controls-toggle-closed-captions-button,\n  #tile-footer-player audio::-webkit-media-controls-mute-button {\n    display: none;\n  }"
+    extra: {  }
+    priority: '0'
+    name: Tile
+  -
+    location: ''
+    inline: ".zygo_content_field.zygo_content_field_id_1.zygo-ava {\n    position: absolute;\n    right: -9%;\n    top: -3%;\n}\n.zygo_avatar img {\n    height: 10vh;\n    min-height: 200px;\n}\n.page-header {\n    position: absolute;\n    top: -3%;\n    color: black;\n    width: 90%;\n    text-align: center;\n}"
+    extra: {  }
+    priority: '0'
+    name: article
+  -
+    location: ''
+    inline: "#tile-body-right div {\n    background-image: linear-gradient( 100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80% );\n    background-repeat: no-repeat;\n    animation: shine 1s infinite;\n}\n\t@keyframes shine {\nfrom {\n\t\t\tbackground-position:\n\t\t\t\t-50px 0;\n\t\t}\n\t\tto {\n\t\t\tbackground-position:\n\t\t\t\t250px 0;\n\t\t}\n\t}"
+    extra: {  }
+    priority: '0'
+    name: 'New item'

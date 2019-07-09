@@ -1,0 +1,7 @@
+<?php
+
+$item = $model->getTable();
+$app = JFactory::getApplication();
+
+
+?>

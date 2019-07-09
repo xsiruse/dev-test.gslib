@@ -1,0 +1,7 @@
+"nomination","nomination_raw","id","id_raw","instrument","instrument_raw","sp_number_of_strings___instrument_id","sp_number_of_strings___instrument___params","InstrumentType","InstrumentType_raw","sp_number_of_strings___InstrumentType_id","sp_number_of_strings___InstrumentType___params"
+"4","4","1","1","Bass","[""2""]","electroacustic electric semyacustic","[""2"",""1"",""3""]"
+"5","5","2","2","Bass","[""2""]","electric electroacustic semyacustic","[""1"",""2"",""3""]"
+"6","6","3","3","Bass Guitar","[""2"",""1""]","electric electroacustic semyacustic","[""1"",""2"",""3""]"
+"7","7","4","4","Guitar","[""1""]","electric electroacustic semyacustic","[""1"",""2"",""3""]"
+"8","8","5","5","Guitar","[""1""]","electric electroacustic semyacustic","[""1"",""2"",""3""]"
+"9","9","6","6","Guitar","[""1""]","electric electroacustic semyacustic","[""1"",""2"",""3""]"

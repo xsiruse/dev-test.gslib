@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" method="upgrade" group="slogin_integration">
+	<name>ZygoProfile Plugin profile Slogin</name>
+	<author>SherZa</author>
+	<creationDate>26.01.2016</creationDate>
+	<copyright>(C) 2016. All rights reserved.</copyright>
+	<license>GNU/GPL v.3 or later.</license>
+	<authorEmail></authorEmail>
+	<authorUrl>http://psytronica.ru</authorUrl>
+	<version>1.0.2</version>
+	<description>ZygoProfile slogin integration</description>
+	<files>
+		<filename plugin="zygo_profile">zygo_profile.php</filename>
+		<filename>index.html</filename>
+		<folder>fields</folder>
+	</files>
+    <config>
+        <fields name="params">
+			<fieldset name="basic" addfieldpath="/plugins/slogin_integration/zygo_profile/fields">
+
+				<field name="avatar" type="zeprofilefield" 
+					label="Выберите поле 'аватар'" />
+				<field name="status" type="zeprofilefield" 
+					label="Выберите поле 'статус'" />
+				<field name="birthday" type="zeprofilefield" 
+					label="Выберите поле 'день рождения'" />	
+				<field name="gender" type="zeprofilefield" 
+					label="Выберите поле 'пол'" />
+				
+				<field name="gender_m" type="text" default="m" 
+					label="Пользовательское обозначение мужского пола в плагине zygo_profile" description="Например: m, м, муж, men, hombre..." />		
+				
+				<field name="gender_f" type="text" default="f" 
+					label="Пользовательское обозначение женского пола в плагине zygo_profile" description="Например: f, ж, жен, woman, mujer..." />	
+				
+				<field name="vkimport" type="list" default="1" label="Импорт аватара vkontakte без изменений" description="">
+				  <option value="0">Нет</option>
+				  <option value="1">Да</option>
+				</field>		
+
+				<field type="spacer" name="myspacer" label="&lt;hr/&gt;&lt;img src='../plugins/slogin_integration/zygo_profile/fields/example.png'/&gt;" />				
+			</fieldset>
+		</fields>
+    </config>
+</extension>

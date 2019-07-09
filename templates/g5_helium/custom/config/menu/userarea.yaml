@@ -1,0 +1,44 @@
+ordering:
+  moya-stranitsa: ''
+  moi-publikatsii: ''
+  myguitars: ''
+  create-a-post: ''
+  nastrojki: ''
+  working-on-your-site: ''
+items:
+  moya-stranitsa:
+    id: 413
+    dropdown_dir: right
+    dropdown_hide: '0'
+    width: auto
+    icon: 'fa fa-address-card'
+  moi-publikatsii:
+    id: 420
+    dropdown_dir: right
+    dropdown_hide: '0'
+    width: auto
+    icon: 'fa fa-leanpub'
+  myguitars:
+    id: 464
+    dropdown_dir: right
+    dropdown_hide: '0'
+    width: auto
+    icon: 'fa fa-music'
+  create-a-post:
+    id: 104
+    dropdown_dir: right
+    dropdown_hide: '0'
+    width: auto
+    icon: 'fa fa-edit'
+  nastrojki:
+    id: 419
+    dropdown_dir: right
+    dropdown_hide: '0'
+    width: auto
+    icon: 'fa fa-cog'
+  working-on-your-site:
+    id: 109
+    dropdown_dir: right
+    dropdown_hide: '0'
+    width: auto
+    icon: 'fa fa-file-text-o'

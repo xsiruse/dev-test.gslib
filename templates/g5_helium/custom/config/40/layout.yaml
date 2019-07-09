@@ -1,0 +1,115 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1505850393
+layout:
+  navigation: {  }
+  /header/: {  }
+  intro: {  }
+  /features/: {  }
+  /utility/: {  }
+  /above/: {  }
+  /testimonials/: {  }
+  /expanded/: {  }
+  /container-main/:
+    -
+      -
+        'aside 25':
+          -
+            - position-position-1441
+      -
+        'mainbar 50':
+          -
+            - system-content-9895
+      -
+        'sidebar 25':
+          -
+            - position-position-6158
+  footer: {  }
+  offcanvas: {  }
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+  intro:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  features:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  utility:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+    attributes:
+      class: ''
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  position-position-1441:
+    title: Aside
+    attributes:
+      key: aside
+  position-position-6158:
+    title: Sidebar
+    attributes:
+      key: sidebar

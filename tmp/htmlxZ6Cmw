@@ -1,0 +1,7 @@
+<?php 
+$user =& JFactory::getUser();
+$username = $user->get( 'username' );
+if($user->aid > 0) {
+echo '<a class="button btn btn-primary" data-rokbox data-rokbox-element="#login-top" href="#">' . $username . '</a>';} 
+else {echo '<a class="button btn btn-primary" data-rokbox data-rokbox-element="#login-top" href="#">Вход</a>';
+?>

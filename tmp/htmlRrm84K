@@ -1,0 +1,12 @@
+<?php
+echo 'Hello World';
+$myDb = JFactory::getDbo();
+$myQuery = $myDb->getQuery(true);
+$myQuery
+    ->select(array('gsl_headstock', 'gsl_country'))
+    ->from('guitars1_assets')
+    
+
+print_r($myQuery);
+echo 1;
+?>

@@ -1,0 +1,8 @@
+<?php 
+$user =& JFactory::getUser();
+$username = $user->get( 'username' );
+if ($user->get('id')!=0) {
+echo '<a href="#login-top" class="modal" rel="{size: {x: 700, y: 500}, handler:'iframe'}"  >' . $username . '</a>';
+} 
+else {echo '<a href="#login-top" class="modal" rel="{size: {x: 700, y: 500}, handler:'iframe'}" >Вход</a>';}
+?>

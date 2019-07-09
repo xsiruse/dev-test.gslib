@@ -1,0 +1,18 @@
+
+/* Masonry Boxes */
+
+/* General styling */
+.rspbld-masonry-boxes .boxes-container .box {
+	overflow: hidden;
+}
+.rspbld-masonry-boxes .btn {
+	margin-top: 10px;
+}
+
+@media(max-width: 767px) {
+	.rspbld-masonry-boxes .boxes-container .box {
+		height: auto !important;
+		width: 100% !important;
+	}
+}
+/* End general styling */
