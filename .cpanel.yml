@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/guitars1/stage/public_html
-    - / -R images $DEPLOYPATH
+    - /bin cp * $DEPLOYPATH 
