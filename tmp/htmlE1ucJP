@@ -1,4 +1,0 @@
-
-
-<?php elseif ($field->type == 'CMAvatar') : ?>
-        <?php echo $field->value; ?>

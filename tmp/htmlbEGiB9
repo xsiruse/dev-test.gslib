@@ -1,8 +1,0 @@
-<?php
-
-$item = $model->getTable();
-$app = JFactory::getApplication();
-
-$item = $model->getTable();
-echo "<pre>";print_r($item);exit;
-?>

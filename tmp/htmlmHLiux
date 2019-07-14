@@ -1,4 +1,0 @@
-<?php
-$db2 = FabrikWorker::getDbo(false, 2);
-
-?>

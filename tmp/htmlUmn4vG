@@ -1,1 +1,0 @@
-<?php $author_obj = JFactory::getUser($this-&gt;item-&gt;created_by); $author_email = $author_obj-&gt;email; $avatar_hash = md5(strtolower(trim($author_email))); $avatar_size = 120; $avatar_url = '//www.gravatar.com/avatar/'.$avatar_hash.'.jpg'; $avatar_url .= '?s='.$avatar_size; echo '<img src="'.$avatar_url.'" alt="" /> ?>
