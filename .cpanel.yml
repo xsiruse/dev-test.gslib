@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/guitars1/stage/public_html
+    - export DEPLOYPATH=/home/guitars1/dev-test.gslib.ru/public_html
     - /bin/cp -r * $DEPLOYPATH
